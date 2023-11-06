@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between text-xl'>
         <div>
-            <img src={logo} />
+            <img src={logo} alt='logo' />
         </div>
         <Navbar />
         <div className='flex text-[#285380]'>

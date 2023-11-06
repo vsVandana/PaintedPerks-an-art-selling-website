@@ -30,7 +30,7 @@ const Paintings_With_Price_cards = ({ items_data, heading }) => {
             >
             {(hoveredIndex === index) ? (
               <div className="relative border-2 p-2">
-                <img className="w-full" src={items.img2} alt="img2" />
+                <img className="w-full" src={items.img2} alt="image2" />
               <div className=" flex items-center justify-between mx-2 ">
                   <button className="absolute top-[380px] left-4 border-2 border-white bg-white text-md font-bold py-2 px-8 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
                     Add to cart
@@ -39,7 +39,7 @@ const Paintings_With_Price_cards = ({ items_data, heading }) => {
                 </div>
                 </div>
             )
-            :<img className="w-full" src={items.img1} alt="img1" />}
+            :<img className="w-full" src={items.img1} alt="image1" />}
               <div className="flex justify-between py-1 mt-1">
                 <h2 className="text-md text-bold tracking-wider text-gray-500">
                   {items.img_type}

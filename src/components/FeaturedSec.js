@@ -8,7 +8,7 @@ const FeaturedSec = () => {
     {images.map((image,index)=>{
       return (
       <div className='w-1/5 p-2' key={index}>
-        <img className='w-48' src={image} alt='img' />
+        <img className='w-48' src={image} alt='image' />
         </div>)
     })}
     </div>
