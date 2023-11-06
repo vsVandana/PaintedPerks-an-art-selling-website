@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Banners_sec = ({banner_data}) => {
+const Banners_Sec = ({banner_data}) => {
   return (
     <div className='relative my-10 mx-16'>
         <img className='w-full h-[600px]'  src={banner_data.image} alt='banner'/>
@@ -14,4 +14,4 @@ const Banners_sec = ({banner_data}) => {
   )
 }
 
-export default Banners_sec
+export default Banners_Sec
