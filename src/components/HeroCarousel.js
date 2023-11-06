@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { paintings } from "../data/hero_section_data";
-import ShimmerHeroCarousel from "./ShimmerHeroCarousel";
 
 const HeroCarousel = () => {
   const [currImgIndex, setCurrImgIndex] = useState(0);
- const [pageLoaded , setPageLoaded] = useState(false);
+
   const nextImg = () => {
     setCurrImgIndex((currImgIndex + 1) % paintings.length);
   };
 
   const prevImg = () => {
     setCurrImgIndex((currImgIndex - 1 + paintings.length) % paintings.length);
+    // Add paintings.length bczwhen we are on 0 index and after we are clicking on prevbtn it should show the last index
   };
  
   const currentPainting = paintings[currImgIndex];
@@ -22,14 +22,8 @@ const HeroCarousel = () => {
     return () => clearInterval(timer);
   }, [currImgIndex]);
  
-  useEffect(()=>{
-    setTimeout(()=>{
-      setPageLoaded(true);
-    },200)
-  },[])
 
   return(
-  pageLoaded ?  (
     <div className=" hero-carousel">
       <button
         onClick={prevImg}
@@ -81,8 +75,6 @@ const HeroCarousel = () => {
         &gt;
       </button>
     </div>
-  )
-  :  <ShimmerHeroCarousel /> 
   )
 
 };
