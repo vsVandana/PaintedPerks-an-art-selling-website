@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cards_Shop_By = ({Items_data, type}) => {
+const CARDS_SHOP_BY = ({Items_data, type}) => {
   return (
     <div>
         <div className='m-16 py-10'>
@@ -31,4 +31,4 @@ const Cards_Shop_By = ({Items_data, type}) => {
   )
 }
 
-export default Cards_Shop_By
+export default CARDS_SHOP_BY

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import StataicRating from "./StataicRating";
 import {AiOutlineHeart} from "react-icons/ai"
-const Product_Cards= ({ items_data, heading }) => {
+const PRODUCT_CARDS= ({ items_data, heading }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -59,4 +59,4 @@ const Product_Cards= ({ items_data, heading }) => {
   );
 };
 
-export default Product_Cards;
+export default PRODUCT_CARDS;
