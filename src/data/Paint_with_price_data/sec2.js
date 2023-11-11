@@ -13,7 +13,7 @@ export const pwp_sec2_data = [
         img_type:'Black & White',
         rating:5,
         title:'Ornamental Global Poster',
-        price:'$112.00-$115.00',
+        price:'$112.00 - $115.00',
     },
     {
         img1:img_2_1,
@@ -21,7 +21,7 @@ export const pwp_sec2_data = [
         img_type:'Illustration',
         rating:5,
         title:'Pastel Petals Poster',
-        price:'$115.00-$118.00',
+        price:'$115.00 - $118.00',
     },
     {
         img1:img_3_1,
@@ -29,7 +29,7 @@ export const pwp_sec2_data = [
         img_type:'Fashion',
         rating:5,
         title:'Naptime Poster',
-        price:'$110.00-$114.00',
+        price:'$110.00 - $114.00',
     },
     {
         img1:img_4_1,
@@ -37,7 +37,7 @@ export const pwp_sec2_data = [
         img_type:'Animal',
         rating:5,
         title:'There You Are Poster',
-        price:'$118.00-$120.00',
+        price:'$118.00 - $120.00',
     },
 
 ]

@@ -2,6 +2,13 @@
   font-family: 'Playfair Display', serif;
 }
 
+li{
+  cursor:pointer;
+}
+li:hover,
+li:active{
+  color: #E7A0AE;
+}
  /* HeroCarousel.css */
 .hero-carousel {
   position: relative;

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CARDS_SHOP_BY = ({Items_data, type}) => {
+const ProductCategory = ({Items_data, type}) => {
   return (
     <div>
         <div className='m-16 py-10'>
@@ -17,9 +17,9 @@ const CARDS_SHOP_BY = ({Items_data, type}) => {
                  <img className='w-1/2 p-1' src={items.img2} alt='image2'/>
                  </div>):
                  (<img  className='p-1' src={items.img1} alt='image1'/>)}
-                 <div className='flex items-center justify-between m-2 pt-4'>
-                 <h2 className='text-2xl font-extrabold'>{items.collection_type}</h2>
-                 <h3 className='text-gray-500 text-xl font-semibold'>{items.Posters}  Posters</h3>
+                 <div className='flex flex-col items-center justify-between m-2 pt-4'>
+                 <h2 className='xl:text-2xl lg:text-xl font-extrabold'>{items.collection_type}</h2>
+                 <h3 className='text-gray-500 xl:text-xl lg:text-lg font-semibold'>{items.Posters}  Posters</h3>
                  </div>
             </div>
             )
@@ -31,4 +31,4 @@ const CARDS_SHOP_BY = ({Items_data, type}) => {
   )
 }
 
-export default CARDS_SHOP_BY
+export default ProductCategory

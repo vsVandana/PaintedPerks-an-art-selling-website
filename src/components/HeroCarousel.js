@@ -46,22 +46,21 @@ const HeroCarousel = () => {
           // style={imageAnimation}
         />
         <div
-          className="text-overlay top-[400px] left-[800px]  "
+          className="text-overlay top-[400px] left-[200px] sm:left-[335px] md:left-[435px]  lg:left-[600px] "
           // style={{ color: paintings[currImgIndex].color }}
         >
-          <p  className="text-2xl slide-in-from-right ">
+          <p  className="text-2xl md:text-xl sm:text-md slide-in-from-right ">
             {currentPainting.title}
           </p>
-          <h1  className="text-8xl font-extrabold  slide-in-from-right ">
+          <h1  className="lg:text-8xl md:text-6xl  sm:text-4xl font-extrabold  slide-in-from-right ">
             {currentPainting.description1}
           </h1>
-          <h1  className="text-8xl font-extrabold  slide-in-from-right ">
+          <h1  className="lg:text-8xl md:text-6xl sm:text-4xl font-extrabold  slide-in-from-right ">
             {currentPainting.description2}
           </h1>
           <button
-            onClick={nextImg}
             // style={textAnimation}
-            className=" bg-white text-[#285380] text-md tracking-widest m-4 py-3 px-12 border-2 border-white rounded-3xl slide-in-from-right"
+            className=" bg-white text-[#285380] md:text-md lg:text-md xl:text-md sm:text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
           >
             Shop Art Online
           </button>

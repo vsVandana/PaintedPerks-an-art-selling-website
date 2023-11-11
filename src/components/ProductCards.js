@@ -31,26 +31,26 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
             {(hoveredIndex === index) ? (
               <div className="relative border-2 p-2">
                 <img className="w-full" src={items.img2} alt="image2" />
-              <div className=" flex items-center justify-between mx-2 ">
-                  <button className="absolute top-[380px] left-4 border-2 border-white bg-white text-md font-bold py-2 px-8 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
+              <div className=" flex items-center justify-between lg:mx-2 mx-1 ">
+                  <button className="absolute top-[50px] sm:top-[100px] md:top-[135px] lg:top-[175px] xl:top-[250px] left-4 border-2 border-white bg-white text-xs lg:text-sm font-bold py-1 px-1 sm:px-2  md:px-4 xl:px-8 lg:px-4 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
                     Add to cart
                   </button>
-                  <AiOutlineHeart className=" absolute top-[388px] right-4 text-3xl text-white hover:bg-white hover:text-4xl hover:text-black hover:border-2 hover:rounded-3xl hover:p-1"/>
+                  <AiOutlineHeart className=" absolute xl:top-[258px] lg:top-[190px] md:top-[130px] right-4 xl;text-3xl lg:text-2xl md:text-xl sm:text-md text-sm text-white hover:bg-white hover:text-3xl hover:text-black hover:border-2 hover:rounded-3xl hover:p-1"/>
                 </div>
                 </div>
             )
             :<img className="w-full" src={items.img1} alt="image1" />}
-              <div className="flex justify-between py-1 mt-1">
+              <div className=" py-1 mt-1">
                 <h2 className="text-md text-bold tracking-wider text-gray-500">
                   {items.img_type}
                 </h2>
 
                 <StataicRating rating={items.rating} />
               </div>
-              <h1 className="text-gray-700 text-2xl font-medium pb-1">
+              <h1 className="text-gray-700 lg:text-2xl md:text-xl text-md font-medium pb-1">
                 {items.title}
               </h1>
-              <p className="text-xl font-extrabold pb-1">{items.price}</p>
+              <p className="lg:text-xl text-md font-extrabold pb-1">{items.price}</p>
             </div>
           );
         })}
