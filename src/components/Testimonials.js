@@ -28,7 +28,7 @@ const Testimonials = () => {
     <div className="mx-16 my-10 flex items-center">
  
 
-      <div className="border-2 border-[#f4dfe4] bg-[#f4dfe4] shadow-md ms-4 xl:h-[463px] lg:h-[360px] md:h-[300px]" style={{'backgroundImage':$(url(bg))}}>
+      <div className="border-2 border-[#f4dfe4] bg-[#f4dfe4] shadow-md ms-4 xl:h-[463px] lg:h-[360px] md:h-[300px]" style={{'backgroundImage':`$(url(bg))`}}>
         <div className="relative mx-12">
           <h1 className="absolute xl:top-20 lg:top-10 md:top-8 top-5 text-sm xl:text-4xl lg:text-2xl md:text-xl sm:text-md font-extrabold text-[#285380] ">
             What Clients Say
