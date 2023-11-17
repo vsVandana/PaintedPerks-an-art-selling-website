@@ -3,7 +3,7 @@ import { images } from '../data/FeaturedIn_data'
 const FeaturedSec = () => {
   return (
     <div className='m-16 py-6'>
-        <h1 className='text-center text-4xl font-extrabold'>Fetured in</h1>
+        <h1 className='text-center text-2xl md:text-4xl font-extrabold'>Fetured in</h1>
         <div className='flex items-center py-9'>
     {images.map((image,index)=>{
       return (

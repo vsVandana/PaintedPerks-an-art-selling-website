@@ -6,7 +6,7 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 const Header = () => {
   return (
-    <div className='flex items-center justify-between text-xl'>
+    <div className='flex items-center justify-between text-xl w-full'>
         <div>
             <img src={logo} alt='logo' />
         </div>

@@ -16,7 +16,7 @@ import Newsletter from './Newsletter'
 
 const Body = () => {
   return (
-    <div className=''>
+    <div className='w-full'>
         {/* Hero section */}
         <HeroCarousel />
         {/* <Section2 /> */}
@@ -25,7 +25,7 @@ const Body = () => {
         <ProductCategory Items_data={Shop_By_Cat} type='Category'/>
         <BANNER_SEC banner_data={Banner2_data} />
         <PRODUCT_CARDS items_data={pwp_sec1_data} heading='Trending Today'/>
-        <SaleBanner />
+        {/* <SaleBanner /> */}
         <PRODUCT_CARDS items_data={pwp_sec2_data} heading='Exclusive Handpics' />
         <ProductCategory Items_data={Shop_By_Artist} type='Artists'/>
         <BANNER_SEC banner_data={Banner3_data} />

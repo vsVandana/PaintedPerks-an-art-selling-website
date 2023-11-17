@@ -24,10 +24,10 @@ const HeroCarousel = () => {
  
 
   return(
-    <div className=" hero-carousel">
+    <div className="hero-carousel w-full">
       <button
         onClick={prevImg}
-        className="absolute top-[350px] left-2 z-10 text-white p-2 text-3xl font-extrabold shadow-xl"
+        className="absolute top-[160px] md:top-[350px] left-2 z-10 text-white p-2 text-3xl font-extrabold shadow-xl"
       >
         &lt;
       </button>
@@ -41,12 +41,12 @@ const HeroCarousel = () => {
         <img
           src={currentPainting.image}
           alt="image"
-          className="w-[1900px] h-[800px] opacity-70 image "
+          className="w-full md:w-[1900px] md:h-[800px] h-full opacity-70 image "
           loading="lazy"
           // style={imageAnimation}
         />
         <div
-          className="text-overlay top-[400px] left-[200px] sm:left-[335px] md:left-[435px]  lg:left-[600px] "
+          className="text-overlay top-[180px] md:top-[400px] left-[200px] sm:left-[335px] md:left-[435px]  lg:left-[600px] "
           // style={{ color: paintings[currImgIndex].color }}
         >
           <p  className="text-2xl md:text-xl sm:text-md slide-in-from-right ">
@@ -60,7 +60,7 @@ const HeroCarousel = () => {
           </h1>
           <button
             // style={textAnimation}
-            className=" bg-white text-[#285380] md:text-md lg:text-md xl:text-md sm:text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-8 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
+            className=" bg-white text-[#285380] md:text-md lg:text-md xl:text-md sm:text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
           >
             Shop Art Online
           </button>
@@ -69,7 +69,7 @@ const HeroCarousel = () => {
        
       <button
         onClick={nextImg}
-        className="absolute top-[350px] right-2 z-10  p-2 text-white text-2xl font-bold shadow-md"
+        className="absolute top-[160px] md:top-[350px] right-2 z-10  p-2 text-white text-2xl font-bold shadow-md"
       >
         &gt;
       </button>
