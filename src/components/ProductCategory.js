@@ -13,10 +13,10 @@ const ProductCategory = ({Items_data, type}) => {
                return( <div className='card w-full sm:w-1/2 md:w-1/4 border-2 border-[#E7A0AE] hover:border-[#285380] p-4 m-1' key={items.id}>
                     {(items.img1 && items.img2) ?(
                 <div className='flex'>
-                 <img  className='w-1/2 p-1' src={items.img1} alt='image1'/>
-                 <img className='w-1/2 p-1' src={items.img2} alt='image2'/>
+                 <img  className='w-1/2 p-1' src={items.img1} alt='category_item'/>
+                 <img className='w-1/2 p-1' src={items.img2} alt='category_item'/>
                  </div>):
-                 (<img  className='p-1' src={items.img1} alt='image1'/>)}
+                 (<img  className='p-1' src={items.img1} alt='category_item'/>)}
                  <div className='flex flex-col items-center justify-between m-2 pt-4'>
                  <h2 className='xl:text-2xl lg:text-xl text-md font-extrabold'>{items.collection_type}</h2>
                  <h3 className='text-gray-500 xl:text-xl lg:text-lg font-semibold'>{items.Posters}  Posters</h3>

@@ -30,7 +30,7 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
             >
             {(hoveredIndex === index) ? (
               <div className="relative border-2 p-2">
-                <img className="w-full" src={items.img2} alt="image2" />
+                <img className="w-full" src={items.img2} alt="Product_item" />
               <div className=" flex items-center justify-between lg:mx-2 mx-1 ">
                   <button className="absolute top-[50px] sm:top-[100px] md:top-[110px] lg:top-[175px] xl:top-[250px] left-4 right-4 border-2 border-white bg-white text-xs lg:text-sm font-bold py-1 px-1 sm:px-1  md:px-2 xl:px-8 lg:px-4 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
                     Add to cart
@@ -39,7 +39,7 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
                 </div>
                 </div>
             )
-            :<img className="w-full" src={items.img1} alt="image1" />}
+            :<img className="w-full" src={items.img1} alt="product_item" />}
               <div className=" py-1 mt-1">
                 <h2 className="text-md text-bold tracking-wider text-gray-500">
                   {items.img_type}

@@ -10,7 +10,6 @@ import { Banner1_data, Banner2_data, Banner3_data } from '../data/Banners_data'
 import PRODUCT_CARDS from './ProductCards'
 import {pwp_sec1_data} from '../data/Paint_with_price_data/sec1'
 import { pwp_sec2_data } from '../data/Paint_with_price_data/sec2'
-import SaleBanner from './SaleBanner'
 import Testimonials from './Testimonials'
 import Newsletter from './Newsletter'
 

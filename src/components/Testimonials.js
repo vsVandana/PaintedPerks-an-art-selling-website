@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import StataicRating from "./StataicRating";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
-import sec1 from "../utils/images/review_sec1.png";
+// import sec1 from "../utils/images/review_sec1.png";
 import { testimonials_data } from "../data/Testimonials_data";
-import bg from "../utils/images/review/bg.jpg";
+// import bg from "../utils/images/review/bg.jpg";
 
 const Testimonials = () => {
   const [currReviewCard, setCurrReviewCard] = useState(0);
@@ -16,12 +16,20 @@ const Testimonials = () => {
       (currReviewCard - 1 + testimonials_data.length) % testimonials_data.length
     );
   };
+
   useEffect(() => {
     const timer = setInterval(() => {
       nextCard();
     }, 2000);
     return () => clearTimeout(timer);
-  }, [currReviewCard]);
+  }, );
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     nextCard();
+  //   }, 2000);
+  //   return () => clearTimeout(timer);
+  // }, [currReviewCard]);
 
   const currCard = testimonials_data[currReviewCard];
   return (

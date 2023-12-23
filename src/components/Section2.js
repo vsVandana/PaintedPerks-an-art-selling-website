@@ -12,8 +12,8 @@ const Section2 = () => {
             {Shop_By_Collection.map((items)=>{
                return( <div className='card w-1/4 border-2 border-[#E7A0AE] hover:border-[#285380] p-4 m-4' key={items.id}>
                 <div className='flex'>
-                 <img  className='w-1/2 p-1' src={items.img1} alt='image1'/>
-                 <img className='w-1/2 p-1' src={items.img2} alt='image2'/>
+                 <img  className='w-1/2 p-1' src={items.img1} alt='item1'/>
+                 <img className='w-1/2 p-1' src={items.img2} alt='item2'/>
                  </div>
                  <div className='flex items-center justify-between m-2 pt-4'>
                  <h2 className='text-2xl font-extrabold'>{items.collection_type}</h2>

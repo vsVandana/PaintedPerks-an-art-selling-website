@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../utils/images/logoedit.jpg'
+// import logo from '../utils/images/logoedit.jpg'
 const Footer = () => {
   return (
     <div className='px-16 pt-16 pb-4 bg-[#fcdee5]'>

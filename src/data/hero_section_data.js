@@ -2,7 +2,7 @@
  import hero2 from '../utils/images/hero2.jpg'
  import hero3 from '../utils/images/hero3.jpg'
  import hero4 from '../utils/images/hero4.jpg'
- import hero5 from '../utils/images/hero5.jpeg'
+//  import hero5 from '../utils/images/hero5.jpeg'
  import hero6 from '../utils/images/hero6.jpg'
 export const paintings = [
      {

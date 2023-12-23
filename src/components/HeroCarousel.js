@@ -20,8 +20,15 @@ const HeroCarousel = () => {
       nextImg();
     }, 4000);
     return () => clearInterval(timer);
-  }, [currImgIndex]);
- 
+  }, );
+
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     nextImg();
+  //   }, 4000);
+  //   return () => clearInterval(timer);
+  // }, [currImgIndex]);
+
 
   return(
     <div className="hero-carousel w-full">
@@ -40,7 +47,7 @@ const HeroCarousel = () => {
         
         <img
           src={currentPainting.image}
-          alt="image"
+          alt="currentPainting"
           className="w-full md:w-[1900px] md:h-[800px] h-full opacity-70 image "
           loading="lazy"
           // style={imageAnimation}
