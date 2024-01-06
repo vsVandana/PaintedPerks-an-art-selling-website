@@ -1,7 +1,7 @@
-import img1 from '../../utils/images/s_b_cat_1.jpg';
-import img2 from '../../utils/images/s_b_cat_2.jpg';
-import img3 from '../../utils/images/s_b_cat_3.jpg';
-import img4 from '../../utils/images/s_b_cat_4.jpg';
+import img1 from '../../utils/images/Home/productCat/s_b_cat_1.jpg';
+import img2 from '../../utils/images/Home/productCat/s_b_cat_2.jpg';
+import img3 from '../../utils/images/Home/productCat/s_b_cat_3.jpg';
+import img4 from '../../utils/images/Home/productCat/s_b_cat_4.jpg';
 export const Shop_By_Cat = [
     {
         id: 1,

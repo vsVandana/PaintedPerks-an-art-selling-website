@@ -3,6 +3,7 @@ import logo from '../utils/images/logoedit.jpg'
 import { Navbar } from '../Pages/Navbar';
 import {AiOutlineUser,AiOutlineShoppingCart,AiOutlineHeart} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [showNav , setShowNav] = useState(false); 
@@ -13,7 +14,8 @@ const Header = () => {
   return (
     <div className='flex items-center justify-between text-xl w-full relative'>
         <div>
-            <img src={logo} alt='logo' />
+          <Link to='/'>
+          <img src={logo} alt='logo' /></Link>
         </div>
        
         <div className='lg:hidden mx-4 text-2xl lg:cursor-pointer' onClick={toggleNav}>
@@ -24,9 +26,9 @@ const Header = () => {
         <Navbar />
         </div>
         <div className='flex text-[#285380]'>
-          <AiOutlineUser className='mx-5 text-2xl'/>
-          < AiOutlineShoppingCart className='mx-5 text-2xl'/>
-          <AiOutlineHeart className='mx-5 text-2xl'/>
+          <AiOutlineUser className='mx-5 text-2xl cursor-pointer'/>
+          < AiOutlineShoppingCart className='mx-5 text-2xl cursor-pointer'/>
+          <AiOutlineHeart className='mx-5 text-2xl cursor-pointer'/>
         </div>
     </div>
   )
