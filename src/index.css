@@ -9,6 +9,12 @@ li:hover,
 li:active{
   color: #E7A0AE;
 }
+
+/* Navbar */
+
+.transitionResNav{
+  transition: all 0.3s ease-in;
+}
  /* HeroCarousel.css */
 .hero-carousel {
   position: relative;
@@ -21,7 +27,6 @@ li:active{
   overflow: hidden;
 }
 .image {
-  /* Add any initial styles for your images */
   opacity: 0;
   transition: opacity 1s ease;
 }

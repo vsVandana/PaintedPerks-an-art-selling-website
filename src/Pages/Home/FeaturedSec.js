@@ -1,5 +1,5 @@
 import React from 'react'
-import { images } from '../data/FeaturedIn_data'
+import { images } from '../../data/FeaturedIn_data'
 const FeaturedSec = () => {
   return (
     <div className='m-16 py-6'>

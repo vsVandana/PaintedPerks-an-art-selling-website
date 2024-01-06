@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import StataicRating from "./StataicRating";
+import StataicRating from "../StataicRating";
 import {AiOutlineHeart} from "react-icons/ai"
 const PRODUCT_CARDS= ({ items_data, heading }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
