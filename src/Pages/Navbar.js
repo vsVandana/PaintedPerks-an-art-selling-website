@@ -1,8 +1,4 @@
 import React from "react";
-import Home from "./MainPages/Home";
-import Shop from "./MainPages/Shop"
-import Artists from "./MainPages/Artists"
-import Contact_us from "./MainPages/Contact_us"
 import { Link } from "react-router-dom";
 // #E7A0AE - pink logo color for hover
 export const Navbar = () => {

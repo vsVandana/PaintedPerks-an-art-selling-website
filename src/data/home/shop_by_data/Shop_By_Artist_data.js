@@ -1,9 +1,9 @@
-import img_1_1 from '../../utils/images/Home/productCat/s_b_artist_1.1.jpg'
-import img_1_2 from '../../utils/images/Home/productCat/s_b_artist_1.2.jpg'
-import img_2_1 from '../../utils/images/Home/productCat/s_b_artist_2.1.jpg'
-import img_2_2 from '../../utils/images/Home/productCat/s_b_artist_2.2.jpg'
-import img_3_1 from '../../utils/images/Home/productCat/s_b_artist_3.1.jpg'
-import img_3_2 from '../../utils/images/Home/productCat/s_b_artist_3.2.jpg'
+import img_1_1 from '../../../utils/images/Home/productCat/s_b_artist_1.1.jpg'
+import img_1_2 from '../../../utils/images/Home/productCat/s_b_artist_1.2.jpg'
+import img_2_1 from '../../../utils/images/Home/productCat/s_b_artist_2.1.jpg'
+import img_2_2 from '../../../utils/images/Home/productCat/s_b_artist_2.2.jpg'
+import img_3_1 from '../../../utils/images/Home/productCat/s_b_artist_3.1.jpg'
+import img_3_2 from '../../../utils/images/Home/productCat/s_b_artist_3.2.jpg'
 
 export const Shop_By_Artist= [
     {

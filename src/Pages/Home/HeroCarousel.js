@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { paintings } from "../../data/hero_section_data";
+import { paintings } from "../../data/home/hero_section_data";
 
 const HeroCarousel = () => {
   const [currImgIndex, setCurrImgIndex] = useState(0);

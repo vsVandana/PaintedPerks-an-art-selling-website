@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import StataicRating from "./StataicRating";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 // import sec1 from "../utils/images/review_sec1.png";
-import { testimonials_data } from "../data/Testimonials_data";
+import { testimonials_data } from "../data/home/Testimonials_data";
 // import bg from "../utils/images/review/bg.jpg";
 
 const Testimonials = () => {

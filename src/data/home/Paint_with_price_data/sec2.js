@@ -1,11 +1,11 @@
-import img_1_1 from '../../utils/images/Paintings_By_Price_sec/sec2/img_1_1.jpg'
-import img_1_2 from '../../utils/images/Paintings_By_Price_sec/sec2/img_1_2.jpg'
-import img_2_1 from '../../utils/images/Paintings_By_Price_sec/sec2/img_2_1.jpg'
-import img_2_2 from '../../utils/images/Paintings_By_Price_sec/sec2/img_2_2.jpg'
-import img_3_1 from '../../utils/images/Paintings_By_Price_sec/sec2/img_3_1.jpg'
-import img_3_2 from '../../utils/images/Paintings_By_Price_sec/sec2/img_3_2.jpg'
-import img_4_1 from '../../utils/images/Paintings_By_Price_sec/sec2/img_4_1.jpg'
-import img_4_2 from '../../utils/images/Paintings_By_Price_sec/sec2/img_4_2.jpg'
+import img_1_1 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_1_1.jpg'
+import img_1_2 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_1_2.jpg'
+import img_2_1 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_2_1.jpg'
+import img_2_2 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_2_2.jpg'
+import img_3_1 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_3_1.jpg'
+import img_3_2 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_3_2.jpg'
+import img_4_1 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_4_1.jpg'
+import img_4_2 from '../../../utils/images/Paintings_By_Price_sec/sec2/img_4_2.jpg'
 export const pwp_sec2_data = [
     {
         img1:img_1_1,

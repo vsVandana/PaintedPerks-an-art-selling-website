@@ -1,9 +1,8 @@
- import hero1 from '../utils/images/Home/HeroSec/hero1.jpg'
- import hero2 from '../utils/images/Home/HeroSec/hero2.jpg'
- import hero3 from '../utils/images/Home/HeroSec/hero3.jpg'
- import hero4 from '../utils/images/Home/HeroSec/hero4.jpg'
-//  import hero5 from '../utils/images/hero5.jpeg'
- import hero6 from '../utils/images/Home/HeroSec/hero6.jpg'
+ import hero1 from '../../utils/images/Home/HeroSec/hero1.jpg'
+ import hero2 from '../../utils/images/Home/HeroSec/hero2.jpg'
+ import hero3 from '../../utils/images/Home/HeroSec/hero3.jpg'
+ import hero4 from '../../utils/images/Home/HeroSec/hero4.jpg'
+ import hero6 from '../../utils/images/Home/HeroSec/hero6.jpg'
 export const paintings = [
      {
         image: hero1,

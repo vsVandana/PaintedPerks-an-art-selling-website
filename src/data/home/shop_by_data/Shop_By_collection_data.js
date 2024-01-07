@@ -1,11 +1,11 @@
-import img1_1 from '../../utils/images/Home/sec2/se2_1_1.jpg';
-import img1_2 from '../../utils/images/Home/sec2/se2_1_1.jpg';
-import img2_1 from '../../utils/images/Home/sec2/sec2_2.jpg';
-import img2_2 from '../../utils/images/Home/sec2/sec2_2_1.jpg';
-import img3_1 from '../../utils/images/Home/sec2/sec2_3.jpg';
-import img3_2 from '../../utils/images/Home/sec2/sec2_3_1.jpg';
-import img4_1 from '../../utils/images/Home/sec2/sec2_4.jpg';
-import img4_2 from '../../utils/images/Home/sec2/sec2_4_1.jpg';
+import img1_1 from '../../../utils/images/Home/sec2/se2_1_1.jpg';
+import img1_2 from '../../../utils/images/Home/sec2/se2_1_1.jpg';
+import img2_1 from '../../../utils/images/Home/sec2/sec2_2.jpg';
+import img2_2 from '../../../utils/images/Home/sec2/sec2_2_1.jpg';
+import img3_1 from '../../../utils/images/Home/sec2/sec2_3.jpg';
+import img3_2 from '../../../utils/images/Home/sec2/sec2_3_1.jpg';
+import img4_1 from '../../../utils/images/Home/sec2/sec2_4.jpg';
+import img4_2 from '../../../utils/images/Home/sec2/sec2_4_1.jpg';
 export const Shop_By_Collection = [
     {
         id: 1,

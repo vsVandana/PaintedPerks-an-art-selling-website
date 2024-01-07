@@ -1,7 +1,7 @@
-import profile1 from '../utils/images/review/sec2_4.png';
-import profile2 from '../utils/images/review/se2_2.png';
-import profile3 from '../utils/images/review/sec2_5.png';
-import profile4 from '../utils/images/review/sec2_1.png';
+import profile1 from '../../utils/images/Home/review/sec2_4.png';
+import profile2 from '../../utils/images/Home/review/se2_2.png';
+import profile3 from '../../utils/images/Home/review/sec2_5.png';
+import profile4 from '../../utils/images/Home/review/sec2_1.png';
 
 export const testimonials_data = [
     {

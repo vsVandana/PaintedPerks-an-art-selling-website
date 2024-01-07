@@ -1,11 +1,11 @@
-import img_1_1 from '../../utils/images/Paintings_By_Price_sec/sec1/img1_1.jpg';
-import img_1_2 from '../../utils/images/Paintings_By_Price_sec/sec1/img1_2.jpg';
-import img_2_1 from '../../utils/images/Paintings_By_Price_sec/sec1/img2_1.jpg';
-import img_2_2 from '../../utils/images/Paintings_By_Price_sec/sec1/img2_2.jpg';
-import img_3_1 from '../../utils/images/Paintings_By_Price_sec/sec1/img3_1.jpg';
-import img_3_2 from '../../utils/images/Paintings_By_Price_sec/sec1/img3_2.jpg';
-import img_4_1 from '../../utils/images/Paintings_By_Price_sec/sec1/img4_1.jpg';
-import img_4_2 from '../../utils/images/Paintings_By_Price_sec/sec1/img4_2.jpg';
+import img_1_1 from '../../../utils/images/Paintings_By_Price_sec/sec1/img1_1.jpg';
+import img_1_2 from '../../../utils/images/Paintings_By_Price_sec/sec1/img1_2.jpg';
+import img_2_1 from '../../../utils/images/Paintings_By_Price_sec/sec1/img2_1.jpg';
+import img_2_2 from '../../../utils/images/Paintings_By_Price_sec/sec1/img2_2.jpg';
+import img_3_1 from '../../../utils/images/Paintings_By_Price_sec/sec1/img3_1.jpg';
+import img_3_2 from '../../../utils/images/Paintings_By_Price_sec/sec1/img3_2.jpg';
+import img_4_1 from '../../../utils/images/Paintings_By_Price_sec/sec1/img4_1.jpg';
+import img_4_2 from '../../../utils/images/Paintings_By_Price_sec/sec1/img4_2.jpg';
 export const pwp_sec1_data = [
     {
         img1:img_1_1,

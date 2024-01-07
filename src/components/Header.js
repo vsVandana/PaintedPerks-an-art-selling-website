@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <div className='flex items-center justify-between text-xl w-full relative'>
+    <div className='flex items-center justify-between text-xl w-full relative shadow-sm'>
         <div>
           <Link to='/'>
           <img src={logo} alt='logo' /></Link>

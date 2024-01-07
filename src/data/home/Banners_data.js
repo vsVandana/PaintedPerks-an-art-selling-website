@@ -1,6 +1,6 @@
-import banner1 from '../utils/images/bannersec/banner1.png'
-import banner2 from '../utils/images/bannersec/banner2.png'
-import banner3 from '../utils/images/bannersec/banner3.png'
+import banner1 from '../../utils/images/Home/bannersec/banner1.png'
+import banner2 from '../../utils/images/Home/bannersec/banner2.png'
+import banner3 from '../../utils/images/Home/bannersec/banner3.png'
 export const Banner1_data = {
     image : banner1,
     title1: 'Discover', 
