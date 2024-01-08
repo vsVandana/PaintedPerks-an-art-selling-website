@@ -31,38 +31,38 @@ const HeroCarousel = () => {
 
 
   return(
-    <div className="hero-carousel w-full">
+    <div className="hero-carousel w-full ">
       <button
         onClick={prevImg}
-        className="absolute top-[160px] md:top-[350px] left-2 z-10 text-white p-2 text-3xl font-extrabold shadow-xl"
+        className="absolute top-[50%] left-[0%] z-10 text-white p-2 text-3xl font-extrabold shadow-xl"
       >
         &lt;
       </button>
       
       <div
-        className="image-container"
+        className="image-container "
         key={currentPainting.index}
       >
-        <div className="image-overlay"></div>
+        <div className="image-overlay "></div>
         
         <img
           src={currentPainting.image}
           alt="currentPainting"
-          className="w-full md:w-[1900px] md:h-[800px] h-full opacity-70 image "
+          className="w-full opacity-70 image "
           loading="lazy"
           // style={imageAnimation}
         />
         <div
-          className="text-overlay top-[180px] md:top-[400px] left-[200px] sm:left-[335px] md:left-[435px]  lg:left-[600px] "
+          className="text-overlay  "
           // style={{ color: paintings[currImgIndex].color }}
         >
-          <p  className="text-2xl md:text-xl sm:text-md slide-in-from-right ">
+          {/* <p  className="text-2xl md:text-xl sm:text-md slide-in-from-right ">
             {currentPainting.title}
-          </p>
-          <h1  className="lg:text-8xl md:text-6xl  sm:text-4xl font-extrabold  slide-in-from-right ">
+          </p> */}
+          <h1  className="xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black  slide-in-from-right ">
             {currentPainting.description1}
           </h1>
-          <h1  className="lg:text-8xl md:text-6xl sm:text-4xl font-extrabold  slide-in-from-right ">
+          <h1  className="xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black  slide-in-from-right ">
             {currentPainting.description2}
           </h1>
           <button
@@ -76,7 +76,7 @@ const HeroCarousel = () => {
        
       <button
         onClick={nextImg}
-        className="absolute top-[160px] md:top-[350px] right-2 z-10  p-2 text-white text-2xl font-bold shadow-md"
+        className="absolute top-[50%]  right-[0%] z-10  p-2 text-white text-2xl font-bold shadow-md"
       >
         &gt;
       </button>

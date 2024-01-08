@@ -1,4 +1,4 @@
-export const Headings = [Category, Theme, Size, Price];
+export const Headings = ["Category", "Theme", "Size", "Price"];
 export const Heading1data = [
   "All Art Prints",
   "Canvas Prints",
@@ -33,9 +33,9 @@ export const Heading3data = [
 ];
 
 export const Heading4data = [
-    "$0.00 — $20.00",
-    "$20.00 — $40.00",
-    "$80.00 — $160.00",
-    "$160.00 — $320.00",
-    "$320.00 — $640.00"
+    "$0.00 — $20.00 (8)",
+    "$20.00 — $40.00 (10)",
+    "$80.00 — $160.00 (4)",
+    "$160.00 — $320.00 (3)",
+    "$320.00 — $640.00 (2)"
 ]
