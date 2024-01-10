@@ -76,7 +76,7 @@ const HeroCarousel = () => {
        
       <button
         onClick={nextImg}
-        className="absolute top-[50%]  right-[0%] z-10  p-2 text-white text-2xl font-bold shadow-md"
+        className="absolute top-[50%]  right-[0%] z-10  p-2 text-white text-2xl font-extrabold shadow-md"
       >
         &gt;
       </button>

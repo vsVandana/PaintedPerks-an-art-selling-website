@@ -12,8 +12,8 @@ const SaleBanner = () => {
             </div>
             <div className='absolute lg:top-16 sm:right-14 right-2 md:top-12 sm:top-8 top-1 text-white '>
                 <h1  className='xl:text-5xl lg:text-3xl sm:text-sm text-xs font-extrabold py-1'>30% Off</h1>
-                <h2 className='xl:text-2xl lg:text-xl sm:text-sm text-xs tracking-wider font-bold'>Home Decor</h2>
-                <button className="my-2 border-2 border-white bg-white text-xs xl:text-xl lg:text-md text-black font-bold py-1 xl:px-11 lg:px-7 md:px-5 sm:px-3 px-1 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">Shop Now</button>
+                <h2 className='xl:text-2xl lg:text-xl sm:text-sm text-xs tracking-wider font-extrabold'>Home Decor</h2>
+                <button className="my-2 border-2 border-white bg-white text-xs xl:text-xl lg:text-md text-black font-extrabold py-1 xl:px-11 lg:px-7 md:px-5 sm:px-3 px-1 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">Shop Now</button>
             </div>
         </div>
     </div>

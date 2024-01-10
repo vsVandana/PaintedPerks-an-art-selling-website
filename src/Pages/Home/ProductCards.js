@@ -32,7 +32,7 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
               <div className="relative border-2 p-2">
                 <img className="w-full" src={items.img2} alt="Product_item" />
               <div className=" flex items-center justify-between lg:mx-2 mx-1 ">
-                  <button className="absolute top-[50px] sm:top-[100px] md:top-[110px] lg:top-[175px] xl:top-[250px] left-4 right-4 border-2 border-white bg-white text-xs lg:text-sm font-bold py-1 px-1 sm:px-1  md:px-2 xl:px-8 lg:px-4 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
+                  <button className="absolute top-[50px] sm:top-[100px] md:top-[110px] lg:top-[175px] xl:top-[250px] left-4 right-4 border-2 border-white bg-white text-xs lg:text-sm font-extrabold py-1 px-1 sm:px-1  md:px-2 xl:px-8 lg:px-4 rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
                     Add to cart
                   </button>
                   <AiOutlineHeart className=" absolute md:hidden xl:top-[258px] lg:top-[190px] md:top-[110px] right-4 xl;text-3xl lg:text-2xl md:text-xl sm:text-md text-sm text-white hover:bg-white hover:text-3xl hover:text-black hover:border-2 hover:rounded-3xl hover:p-1"/>

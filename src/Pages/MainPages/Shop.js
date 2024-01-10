@@ -1,5 +1,5 @@
 import React from "react";
-import banner from "../../utils/images/Shop/HeadBanner.avif";
+import banner from "../../utils/images/Shop/banner.jpg";
 import ClassifyProduds from "../Shop/ClassifyProduds";
 import ProductsContainer from "../Shop/ProductsContainer";
 const Shop = () => {
@@ -32,8 +32,8 @@ const Shop = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-5 flex gap-2">
-        <div className="border-2 w-1/4 ">
+      <div className="my-10 mx-4 flex ">
+        <div className=" w-1/4 ">
           <ClassifyProduds />
         </div>
         <div className="border-2 w-3/4 ">

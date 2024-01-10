@@ -113,6 +113,15 @@ li:active{
 
 
 
-/* SECTION_2 */
+/*Shop page */
+/* .item-list {
+  max-height: 200px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
 
+.item-list.show {
+  max-height: 500px; 
+  transition: max-height 0.5s ease-in;
+} */
 

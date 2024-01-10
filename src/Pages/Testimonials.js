@@ -54,7 +54,7 @@ const Testimonials = () => {
                 alt="profile"
               />
               <div className="mx-4">
-                <h3 className="font-bold xl:text-xl lg:text-md md:text-md text-xs">
+                <h3 className="font-extrabold xl:text-xl lg:text-md md:text-md text-xs">
                   {currCard.name}
                 </h3>
                 <h4 className="tracking-wider lg:text-md sm:text-sm text-xs">
@@ -66,13 +66,13 @@ const Testimonials = () => {
 
           <div className="flex items-center justify-center ">
             <button
-              className="text-xs lg:text-md font-bold  py-1 px-1 lg:py-2 xl:px-5 border-2 border-white bg-white rounded-xl mx-1 lg:mx-2 hover:text-white hover:border-[#285380] hover:bg-[#285380]"
+              className="text-xs lg:text-md font-extrabold  py-1 px-1 lg:py-2 xl:px-5 border-2 border-white bg-white rounded-xl mx-1 lg:mx-2 hover:text-white hover:border-[#285380] hover:bg-[#285380]"
               onClick={prevCard}
             >
               <BsArrowLeft />
             </button>
             <button
-              className="text-xs lg:text-md font-bold py-1 px-1 lg:py-2 xl:px-5 border-2 border-white bg-white rounded-xl mx-1 lg:mx-2 hover:text-white hover:border-[#285380] hover:bg-[#285380]"
+              className="text-xs lg:text-md font-extrabold py-1 px-1 lg:py-2 xl:px-5 border-2 border-white bg-white rounded-xl mx-1 lg:mx-2 hover:text-white hover:border-[#285380] hover:bg-[#285380]"
               onClick={nextCard}
             >
               <BsArrowRight />
