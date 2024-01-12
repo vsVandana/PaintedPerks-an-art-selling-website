@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import banner from "../../utils/images/Shop/banner.jpg";
 import ClassifyProduds from "../Shop/ClassifyProduds";
 import ProductsContainer from "../Shop/ProductsContainer";
+import { BsFilterLeft } from "react-icons/bs";
 const Shop = () => {
+  const [showFilterContent, setShowFilterContent] = useState(false);
+  const toggleFilter = () => {
+    setShowFilterContent(!showFilterContent);
+  };
+  const toggleCloseFilter = () => {
+    setShowFilterContent(!showFilterContent);
+  };
+
   return (
-    <div className="my-10">
+    <div className="my-10 ">
       <div className="text-center text-[#285380] mx-10">
         <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl  font-extrabold my-2">
           All Our Wall Art
@@ -32,13 +41,19 @@ const Shop = () => {
         </div>
       </div>
 
-      <div className="my-10 mx-4 flex ">
-        <div className=" w-1/4 ">
-          <ClassifyProduds />
+      <div className="my-10 mx-4 border-t-2 border-b-2">
+        <div className="relative">
+          <div onClick={toggleFilter}>
+            <BsFilterLeft />
+            FIlter
+          </div>
+          <ClassifyProduds
+            isOpen={showFilterContent}
+            toggleSidebar={toggleFilter}
+            closeSidebar={toggleCloseFilter}
+          />
         </div>
-        <div className="border-2 w-3/4 ">
-          <ProductsContainer />
-        </div>
+        <ProductsContainer />
       </div>
     </div>
   );

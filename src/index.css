@@ -110,7 +110,9 @@ li:active{
 } 
 
 
-
+.classify-produds::-webkit-scrollbar {
+  width: 0;
+}
 
 
 /*Shop page */
