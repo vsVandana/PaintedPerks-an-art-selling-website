@@ -1,17 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import banner from "../../utils/images/Shop/banner.jpg";
-import ClassifyProduds from "../Shop/ClassifyProduds";
-import ProductsContainer from "../Shop/ProductsContainer";
-import { BsFilterLeft } from "react-icons/bs";
-const Shop = () => {
-  const [showFilterContent, setShowFilterContent] = useState(false);
-  const toggleFilter = () => {
-    setShowFilterContent(!showFilterContent);
-  };
-  const toggleCloseFilter = () => {
-    setShowFilterContent(!showFilterContent);
-  };
 
+import ProductsContainer from "../Shop/ProductsContainer";
+import { ProductCardsData } from "../../data/shop/Card_data";
+import ProductContainerHeader from "../Shop/ProductContainerHeader";
+
+const Shop = () => {
   return (
     <div className="my-10 ">
       <div className="text-center text-[#285380] mx-10">
@@ -23,7 +17,7 @@ const Shop = () => {
           perfect piece. You’ll find art decor prints for every style.
         </p>
       </div>
-      <div className="m-10">
+      <div className="m-10 ">
         <img src={banner} className="relative h-96 w-full" alt="banner" />
         <div className="absolute top-80 left-28 flex flex-col items-start">
           <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl font-extrabold mt-1 text-[#285380]">
@@ -40,20 +34,13 @@ const Shop = () => {
           </p>
         </div>
       </div>
-
-      <div className="my-10 mx-4 border-t-2 border-b-2">
-        <div className="relative">
-          <div onClick={toggleFilter}>
-            <BsFilterLeft />
-            FIlter
-          </div>
-          <ClassifyProduds
-            isOpen={showFilterContent}
-            toggleSidebar={toggleFilter}
-            closeSidebar={toggleCloseFilter}
-          />
-        </div>
-        <ProductsContainer />
+      <div className="border-t-2 mx-4"></div>
+      <div className="my-8 mx-4 border-b-2">
+       <ProductContainerHeader />
+        <ProductsContainer
+          items_data={ProductCardsData}
+          heading="Trending Today"
+        />
       </div>
     </div>
   );
