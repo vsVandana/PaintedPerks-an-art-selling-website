@@ -10,7 +10,7 @@ const HeroCarousel = () => {
 
   const prevImg = () => {
     setCurrImgIndex((currImgIndex - 1 + paintings.length) % paintings.length);
-    // Add paintings.length bczwhen we are on 0 index and after we are clicking on prevbtn it should show the last index
+    // Add paintings.length bcz when we are on 0 index and after we are clicking on prevbtn it should show the last index
   };
  
   const currentPainting = paintings[currImgIndex];

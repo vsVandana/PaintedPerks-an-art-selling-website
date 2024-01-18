@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import banner from "../../utils/images/Shop/banner.jpg";
 
 import ProductsContainer from "../Shop/ProductsContainer";
@@ -6,6 +6,11 @@ import { ProductCardsData } from "../../data/shop/Card_data";
 import ProductContainerHeader from "../Shop/ProductContainerHeader";
 
 const Shop = () => {
+  const [selectedSort, setSelectedSort] = useState('default');
+
+  const handleSortChange = (option) => {
+    setSelectedSort(option); 
+  };
   return (
     <div className="my-10 ">
       <div className="text-center text-[#285380] mx-10">
@@ -17,7 +22,7 @@ const Shop = () => {
           perfect piece. You’ll find art decor prints for every style.
         </p>
       </div>
-      <div className="m-10 ">
+      <div className="m-10 hidden md:block">
         <img src={banner} className="relative h-96 w-full" alt="banner" />
         <div className="absolute top-80 left-28 flex flex-col items-start">
           <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl font-extrabold mt-1 text-[#285380]">
@@ -36,10 +41,10 @@ const Shop = () => {
       </div>
       <div className="border-t-2 mx-4"></div>
       <div className="my-8 mx-4 border-b-2">
-       <ProductContainerHeader />
+       <ProductContainerHeader onSortChange={handleSortChange} />
         <ProductsContainer
           items_data={ProductCardsData}
-          heading="Trending Today"
+          selectedSort={selectedSort}
         />
       </div>
     </div>
