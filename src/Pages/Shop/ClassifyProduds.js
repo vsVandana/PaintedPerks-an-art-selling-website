@@ -1,4 +1,4 @@
-import {React, useState} from 'react'
+import React from 'react'
 import { RxCross2 } from "react-icons/rx";
 import ClassifySec2 from './ClassifySec2'
 import ClassifySec1 from './ClassifySec1'

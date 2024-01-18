@@ -45,23 +45,23 @@ const ProductContainerHeader = ({ onSortChange }) => {
         <h1>{`Sort by ${selectedSort === 'default' ? 'Default Sorting' : selectedSort}`}</h1>
         <span className='text-xl' onClick={toggleSortingDropdown}><IoMdArrowDropdown /></span>
         <ul className={`absolute top-[40px] bg-white w-[180%] p-4 text-gray-600 ${showSortingDropdown ? 'block' : 'hidden'}`}>
-          <li className='mb-1' onClick={() => handleSortChange('popularity')}><a>Sort by Popularity</a></li>
-          <li  className='mb-1' onClick={() => handleSortChange('rating')}><a>Sort by Average rating</a></li>
-          <li  className='mb-1' onClick={() => handleSortChange('latest')}><a>Sort by latest</a></li>
-          <li  className='mb-1'  onClick={() => handleSortChange('low-to-high')}><a>Sort by Price: low to high</a></li>
-          <li  className='mb-1' onClick={() => handleSortChange('high-to-low')}><a>Sort by Price: high to low</a></li>
+          <li className='mb-1' onClick={() => handleSortChange('popularity')}>Sort by Popularity</li>
+          <li  className='mb-1' onClick={() => handleSortChange('rating')}>Sort by Average rating</li>
+          <li  className='mb-1' onClick={() => handleSortChange('latest')}>Sort by latest</li>
+          <li  className='mb-1'  onClick={() => handleSortChange('low-to-high')}>Sort by Price: low to high</li>
+          <li  className='mb-1' onClick={() => handleSortChange('high-to-low')}>Sort by Price: high to low</li>
         </ul>
         </div>
       <div className='flex items-center gap-2 font-thin relative' >
         <h1>Show <span>9</span></h1>
          <span className='text-xl' onClick={toggleQuantityDropdown}><IoMdArrowDropdown /></span>
          <ul className={`absolute top-[40px] bg-white p-5 text-gray-600 ${showQuantityDropdown ? 'block' : 'hidden'}`}>
-          <li className='mb-1'><a>3</a></li>
-          <li  className='mb-1'><a>4</a></li>
-          <li  className='mb-1'><a>5</a></li>
-          <li  className='mb-1'><a>6</a></li>
-          <li  className='mb-1'><a>7</a></li>
-          <li  className='mb-1'><a>8</a></li>
+          <li className='mb-1'>3</li>
+          <li  className='mb-1'>4</li>
+          <li  className='mb-1'>5</li>
+          <li  className='mb-1'>6</li>
+          <li  className='mb-1'>7</li>
+          <li  className='mb-1'>8</li>
         </ul>
         </div>
     </div>
