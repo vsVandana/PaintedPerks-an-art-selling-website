@@ -1,18 +1,46 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import banner from "../../utils/images/Shop/banner.jpg";
 
 import ProductsContainer from "../Shop/ProductsContainer";
 import { ProductCardsData } from "../../data/shop/Card_data";
 import ProductContainerHeader from "../Shop/ProductContainerHeader";
+import RenderPageNumbers from "../Shop/RenderPageNumbers";
 
 const Shop = () => {
-  const [selectedSort, setSelectedSort] = useState('default');
+  // State variables for selected sort option, current page, and selected quantity
+  const [selectedSort, setSelectedSort] = useState("default");
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedQuantity, setSelectedQuantity] = useState(9);
 
+  // Calculating total number of items and total number of pages based on selected quantity
+  const totalItems = ProductCardsData.length;
+  const totalPages = Math.ceil(totalItems / selectedQuantity);
+
+  // Calculating the start and end indices for the current page
+  const startIndex = (currentPage - 1) * selectedQuantity;
+  const endIndex = startIndex + selectedQuantity;
+
+  // Extracting the items to be displayed on the current page
+  const currentItems = ProductCardsData.slice(startIndex, endIndex);
+
+  // Handling the change in sort option
   const handleSortChange = (option) => {
-    setSelectedSort(option); 
+    setSelectedSort(option);
+  };
+
+  // Handling the change in current page
+  const handlePageChange = (newPage) => {
+    setCurrentPage(newPage);
+  };
+
+  // Handling the change in selected quantity per page
+  const handleQuantityChange = (quantity) => {
+    setSelectedQuantity(quantity);
+    setCurrentPage(1);
   };
   return (
     <div className="my-10 ">
+      {/* Section with title and description */}
       <div className="text-center text-[#285380] mx-10">
         <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl  font-extrabold my-2">
           All Our Wall Art
@@ -22,6 +50,8 @@ const Shop = () => {
           perfect piece. You’ll find art decor prints for every style.
         </p>
       </div>
+
+      {/* Banner section with discount information */}
       <div className="m-10 hidden md:block">
         <img src={banner} className="relative h-96 w-full" alt="banner" />
         <div className="absolute top-80 left-28 flex flex-col items-start">
@@ -39,14 +69,32 @@ const Shop = () => {
           </p>
         </div>
       </div>
+
+      {/* Divider line */}
       <div className="border-t-2 mx-4"></div>
+
+      {/* Product container with header, products, and pagination */}
       <div className="my-8 mx-4 border-b-2">
-       <ProductContainerHeader onSortChange={handleSortChange} />
+        {/* Header with sorting and quantity selection */}
+        <ProductContainerHeader
+          onSortChange={handleSortChange}
+          selectedQuantity={selectedQuantity}
+          onQuantityChange={handleQuantityChange}
+        />
+
+        {/* Container for displaying products */}
         <ProductsContainer
-          items_data={ProductCardsData}
+          items_data={currentItems}
           selectedSort={selectedSort}
         />
       </div>
+
+      {/* Pagination component */}
+      <RenderPageNumbers
+        totalPage={totalPages}
+        currentPage={currentPage}
+        handlePageChanges={handlePageChange}
+      />
     </div>
   );
 };

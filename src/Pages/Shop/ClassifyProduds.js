@@ -5,7 +5,7 @@ import ClassifySec1 from './ClassifySec1'
 import { Headings, Heading1data, Heading2data, Heading3data, Heading4data } from '../../data/shop/Shop_data'
 
 
-const ClassifyProduds = ({ isOpen, toggleSidebar ,closeSidebar }) => {
+const ClassifyProduds = ({ isOpen, closeSidebar }) => {
   
   return (
     <div className={`classify-produds bg-white h-full overflow-y-auto fixed left-0 top-0 px-5 py-14 md:w-1/2 lg:w-1/3  ${isOpen ? 'block' : 'hidden'}`}>

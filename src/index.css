@@ -127,3 +127,12 @@ li:active{
   transition: max-height 0.5s ease-in;
 } */
 
+
+.activepage {
+  color :rgb(21, 21, 21);
+   border-color:rgb(240, 239, 239);
+   border-radius:1.5rem;
+    padding: .25rem 1rem;
+   background-color: rgb(240, 239, 239);
+ 
+}
