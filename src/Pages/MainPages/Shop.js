@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import banner from "../../utils/images/Shop/banner.jpg";
-
 import ProductsContainer from "../Shop/ProductsContainer";
 import { ProductCardsData } from "../../data/shop/Card_data";
 import ProductContainerHeader from "../Shop/ProductContainerHeader";
@@ -10,7 +9,7 @@ const Shop = () => {
   // State variables for selected sort option, current page, and selected quantity
   const [selectedSort, setSelectedSort] = useState("default");
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedQuantity, setSelectedQuantity] = useState(9);
+  const [selectedQuantity, setSelectedQuantity] = useState(4);
 
   // Calculating total number of items and total number of pages based on selected quantity
   const totalItems = ProductCardsData.length;
@@ -54,7 +53,7 @@ const Shop = () => {
       {/* Banner section with discount information */}
       <div className="m-10 hidden md:block">
         <img src={banner} className="relative h-96 w-full" alt="banner" />
-        <div className="absolute top-80 left-28 flex flex-col items-start">
+        <div className="absolute top-80 left-20 flex flex-col items-start">
           <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl font-extrabold mt-1 text-[#285380]">
             Get Up To
           </h1>
@@ -64,14 +63,14 @@ const Shop = () => {
           <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl font-extrabold mt-1 text-[#285380]">
             Your Order
           </h1>
-          <p className="text-[#285380] text-xl md:text-md sm:text-sm xs:text-xs font-semibold">
+          <p className="text-[#285380]  md:text-md sm:text-sm text-xs font-semibold mt-4 ms-2">
             Decorate your home, your way.
           </p>
         </div>
       </div>
 
       {/* Divider line */}
-      <div className="border-t-2 mx-4"></div>
+      <div className="border-t-2 mx-4 my-4"></div>
 
       {/* Product container with header, products, and pagination */}
       <div className="my-8 mx-4 border-b-2">
@@ -80,6 +79,9 @@ const Shop = () => {
           onSortChange={handleSortChange}
           selectedQuantity={selectedQuantity}
           onQuantityChange={handleQuantityChange}
+          startIndex={startIndex+1}
+          endIndex={endIndex+1}
+          totalItems={totalItems}
         />
 
         {/* Container for displaying products */}

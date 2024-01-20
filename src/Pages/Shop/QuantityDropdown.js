@@ -19,7 +19,7 @@ const QuantityDropdown = ({ selectedQuantity, onQuantityChange }) => {
   };
 
   return (
-    <div className="flex items-center gap-2 font-thin relative">
+    <div className="flex items-center gap-2 font-thin relative cursor-pointer">
       {/* Displaying the selected quantity */}
       <h1>
         Show <span className="font-black">{selectedQuantity}</span>
@@ -29,14 +29,14 @@ const QuantityDropdown = ({ selectedQuantity, onQuantityChange }) => {
       <span className="text-xl" onClick={toggleQuantityDropdown}>
         <IoMdArrowDropdown />
       </span>
-      
+
       {/* Dropdown list with conditional rendering based on state */}
       <ul
         className={`absolute top-[40px] bg-white p-5 text-gray-600 ${
           showQuantityDropdown ? "block" : "hidden"
         }`}
       >
-        {[3, 4, 5, 6, 7, 8].map((quantity) => (
+        {[5, 6, 7, 8].map((quantity) => (
           <li
             key={quantity}
             className="mb-1"

@@ -10,7 +10,7 @@ import { Banner1_data, Banner2_data, Banner3_data } from '../../data/home/Banner
 import PRODUCT_CARDS from '../Home/ProductCards'
 import {pwp_sec1_data} from '../../data/home/Paint_with_price_data/sec1'
 import { pwp_sec2_data } from '../../data/home/Paint_with_price_data/sec2'
-import Testimonials from '../Testimonials'
+import Testimonials from '../Home/Testimonials'
 import Newsletter from '../Home/Newsletter'
 
 const Home = () => {

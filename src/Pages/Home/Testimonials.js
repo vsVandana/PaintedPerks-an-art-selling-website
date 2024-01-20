@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import StataicRating from "./StataicRating";
+import StataicRating from "../StataicRating";
 import { BsArrowRight, BsArrowLeft } from "react-icons/bs";
 // import sec1 from "../utils/images/review_sec1.png";
-import { testimonials_data } from "../data/home/Testimonials_data";
+import { testimonials_data } from "../../data/home/Testimonials_data";
 // import bg from "../utils/images/review/bg.jpg";
 
 const Testimonials = () => {
@@ -33,7 +33,7 @@ const Testimonials = () => {
 
   const currCard = testimonials_data[currReviewCard];
   return (
-  <div className="mx-16 flex justify-center" style={{ backgroundImage: 'linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%)' , backgroundRepeat:'no-repeat' ,backgroundSize:'cover'}}>
+  <div className="mx-10 flex justify-center" style={{ backgroundImage: 'linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%)' , backgroundRepeat:'no-repeat' ,backgroundSize:'cover'}}>
       <div className=" shadow-md" >
         <div className="p-16 flex flex-col items-center justify-center">
           <h1 className=" text-xl xl:text-3xl lg:text-2xl font-extrabold text-[#285380] ">

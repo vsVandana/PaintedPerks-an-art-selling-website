@@ -7,7 +7,7 @@ import { GrFormPrevious , GrFormNext } from "react-icons/gr";
     pageNumbers.push(i);
   }
   return (
-    <div className="flex items-center justify-center text-xl text-gray-500 gap-10">
+    <div className="flex items-center justify-center text-xl text-gray-500 gap-10 cursor-pointer">
         {/* Render previous button if not on the first page */}
       {currentPage > 1 && (
          <button       

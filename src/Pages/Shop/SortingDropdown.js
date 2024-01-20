@@ -17,8 +17,8 @@ const SortingDropdown = ({onSortChange}) => {
     onSortChange(option);
   };
   return (
-    <div className="flex items-center gap-2 font-thin relative">
-          <h1>{`Sort by ${
+    <div className="flex items-center gap-2 font-thin relative cursor-pointer">
+          <h1 >{`Sort by ${
             selectedSort === "default" ? "Default Sorting" : selectedSort
           }`}</h1>
           <span className="text-xl" onClick={toggleSortingDropdown}>

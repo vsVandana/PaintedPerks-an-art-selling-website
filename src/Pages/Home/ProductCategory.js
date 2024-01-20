@@ -1,12 +1,15 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ProductCategory = ({Items_data, type}) => {
   return (
     <div>
-        <div className='m-16 py-10'>
+        <div className='mx-10 py-16'>
         <div className='flex items-center justify-between '>
             <h1 className='md:text-3xl text-xl font-extrabold'>Shop By {type}</h1>
+            <Link to='/shop'>
             <button className='border-2 border-[#285380] rounded-3xl bg-[#285380] px-4 sm:px-10 py-2 text-md sm:text-xl text-white tracking-wider font-semibold hover:border-[#E7A0AE] hover:bg-[#E7A0AE]'>View More</button>
+            </Link>
         </div>
         <div className='my-12 flex justify-between flex-wrap sm:flex-nowrap'>
             {Items_data.map((items)=>{

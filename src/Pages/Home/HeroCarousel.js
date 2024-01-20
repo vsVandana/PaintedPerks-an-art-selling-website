@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { paintings } from "../../data/home/hero_section_data";
+import { Link } from "react-router-dom";
 
 const HeroCarousel = () => {
   const [currImgIndex, setCurrImgIndex] = useState(0);
@@ -22,19 +23,11 @@ const HeroCarousel = () => {
     return () => clearInterval(timer);
   }, );
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     nextImg();
-  //   }, 4000);
-  //   return () => clearInterval(timer);
-  // }, [currImgIndex]);
-
-
   return(
-    <div className="hero-carousel w-full ">
+    <div className="hero-carousel w-full mb-16">
       <button
         onClick={prevImg}
-        className="absolute top-[50%] left-[0%] z-10 text-white p-2 text-3xl font-extrabold shadow-xl"
+        className="absolute top-[50%] left-[0%] z-10 text-white p-2 text-2xl font-extrabold shadow-md"
       >
         &lt;
       </button>
@@ -65,18 +58,21 @@ const HeroCarousel = () => {
           <h1  className="xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black  slide-in-from-right ">
             {currentPainting.description2}
           </h1>
+          <Link to='/shop'>
           <button
             // style={textAnimation}
-            className=" bg-white text-[#285380] md:text-md lg:text-md xl:text-md sm:text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
+            className=" bg-white text-[#285380] lg:text-lg md:text-md text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
           >
             Shop Art Online
+            
           </button>
+          </Link>
         </div>
       </div>
        
       <button
         onClick={nextImg}
-        className="absolute top-[50%]  right-[0%] z-10  p-2 text-white text-2xl font-extrabold shadow-md"
+        className="absolute top-[50%] right-[0%] z-10 p-2 text-white text-2xl font-extrabold shadow-md"
       >
         &gt;
       </button>

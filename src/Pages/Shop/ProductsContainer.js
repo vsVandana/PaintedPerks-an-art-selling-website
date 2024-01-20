@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StataicRating from "../StataicRating";
-import { AiOutlineHeart } from "react-icons/ai";
+// import { AiOutlineHeart } from "react-icons/ai";
+
 const ProductsContainer = ({ items_data = [], selectedSort }) => {
   // State for tracking the index of the hovered product item
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -61,7 +62,7 @@ const ProductsContainer = ({ items_data = [], selectedSort }) => {
                   <button className="absolute top-[85%] border-2 border-white bg-white tracing-wider font-extrabold py-2 px-16 text-md rounded-3xl hover:border-[#285380] hover:bg-[#285380] hover:text-white">
                     Add to cart
                   </button>
-                  <AiOutlineHeart className="absolute top-[87%] right-4 xl:text-3xl lg:text-2xl md:text-xl sm:text-md text-sm text-white hover:bg-white hover:text-3xl hover:text-black hover:border-2 hover:rounded-3xl hover:p-1" />
+                  {/* <AiOutlineHeart className="absolute top-[87%] right-4 xl:text-3xl lg:text-2xl md:text-xl sm:text-md text-sm text-white hover:bg-white hover:text-3xl hover:text-black hover:border-2 hover:rounded-3xl hover:p-1" /> */}
                 </div>
               </div>
             ) : (
