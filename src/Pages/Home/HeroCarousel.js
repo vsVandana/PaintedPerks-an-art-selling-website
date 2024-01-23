@@ -29,7 +29,7 @@ const HeroCarousel = () => {
       nextImg();
     }, 3000);
     return () => clearInterval(timer);
-  }, [isHovered]);
+  },);
 
   return(
     <div className="hero-carousel w-full " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

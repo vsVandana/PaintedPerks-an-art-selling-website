@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { Link } from "react-router-dom";
 
 const ClassifySec1 = ({ heading, items }) => {
   // State to manage the visibility of items in the collapsible section

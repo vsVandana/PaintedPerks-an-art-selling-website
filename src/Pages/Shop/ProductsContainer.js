@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StataicRating from "../StataicRating";
-import ProductPage from "../MainPages/ProductPage";
+
 import { Link } from "react-router-dom";
 
 // import { AiOutlineHeart } from "react-icons/ai";
