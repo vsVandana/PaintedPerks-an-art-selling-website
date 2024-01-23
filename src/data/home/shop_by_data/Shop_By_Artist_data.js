@@ -11,28 +11,28 @@ export const Shop_By_Artist= [
         img1 :img_1_1 ,
         img2 :img_1_2 ,
         Posters : 4 ,
-        collection_type : 'Kri Jangit'
+        collection_type : 'Kriti'
     },
     {
         id: 2,
         img1 :img_2_1 ,
         img2 :img_2_2 ,
         Posters : 12 ,
-        collection_type : 'Maya praj'
+        collection_type : 'Maya'
     },
     {
         id: 3,
         img1 :img_3_1 ,
         img2 :img_3_2 ,
         Posters : 8 ,
-        collection_type : 'Kari Gupta '
+        collection_type : 'Karishma'
     },
     {
         id: 4,
         img1 :img_1_1 ,
         img2 :img_1_2 ,
         Posters : 16 ,
-        collection_type : 'Tanu rath'
+        collection_type : 'Tanu'
     }
    
 ]

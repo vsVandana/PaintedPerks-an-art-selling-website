@@ -8,7 +8,7 @@ export const paintings = [
    {
       image: hero4,
       title:'Transform your space',
-      description1: 'Art Prits For',
+      description1: 'Art Prints For',
       description2:  'Stylish Interiors'
    },
    {
@@ -40,7 +40,7 @@ export const paintings = [
    //      description2:  'With Spiritual Art'
    //   },
      {
-        image: hero6,
+        image: 'https://demo2.wpopal.com/postero/wp-content/uploads/2023/06/blog_9-1410x720.jpg',
         title:'Buy Wall Art Online',
         description1: 'Premium Posters',
         description2:  'And Art Prints'

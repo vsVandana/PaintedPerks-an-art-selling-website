@@ -1,5 +1,5 @@
 *{
-  font-family: 'Playfair Display', serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 li{
@@ -108,7 +108,37 @@ li:active{
     opacity: 1;
   }
 } 
+.banner-sec>img{
+  opacity: .8;
+}
+@media (min-width: 214px) and (max-width: 299px) {
+  /* Styles for screens between 240px and 439px */
+  .banner-sec>img{
+/* height: 8rem; */
+  }
+  .banner-datail>h1{
+   font-size: 1.75rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 439px) {
+  /* Styles for screens between 240px and 439px */
+  .banner-sec>img{
+    /* height: 20rem; */
+  }
+  .banner-datail>h1{
+   font-size: 1.75rem;
+  }
+}
 
+@media (min-width: 440px) and (max-width: 639px) {
+  /* Styles for screens between 440px and 639px */
+  .banner-sec>img{
+    /* height: 21rem; */
+  }
+  .banner-datail>h1{
+    font-size: 2.25rem;
+   }
+} 
 
 .classify-produds::-webkit-scrollbar {
   width: 0;
@@ -136,3 +166,4 @@ li:active{
    background-color: rgb(240, 239, 239);
  
 }
+

@@ -24,7 +24,7 @@ const HeroCarousel = () => {
   }, );
 
   return(
-    <div className="hero-carousel w-full mb-16">
+    <div className="hero-carousel w-full ">
       <button
         onClick={prevImg}
         className="absolute top-[50%] left-[0%] z-10 text-white p-2 text-2xl font-extrabold shadow-md"
@@ -41,7 +41,7 @@ const HeroCarousel = () => {
         <img
           src={currentPainting.image}
           alt="currentPainting"
-          className="w-full opacity-70 image "
+          className="w-full opacity-70 image h-screen"
           loading="lazy"
           // style={imageAnimation}
         />
@@ -52,16 +52,16 @@ const HeroCarousel = () => {
           {/* <p  className="text-2xl md:text-xl sm:text-md slide-in-from-right ">
             {currentPainting.title}
           </p> */}
-          <h1  className="xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black  slide-in-from-right ">
+          <h1  className="xl:text-7xl md:text-7xl  text-5xl font-black tracking-wide slide-in-from-right ">
             {currentPainting.description1}
           </h1>
-          <h1  className="xl:text-8xl lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black  slide-in-from-right ">
+          <h1  className="xl:text-7xl md:text-7xl  text-5xl font-black  slide-in-from-right ">
             {currentPainting.description2}
           </h1>
           <Link to='/shop'>
           <button
             // style={textAnimation}
-            className=" bg-white text-[#285380] lg:text-lg md:text-md text-sm tracking-widest m-4 py-2 sm:py-2 md:py-3 lg:py-3 xl:py-3 px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
+            className=" bg-white text-[#285380] lg:text-lg md:text-md text-sm tracking-widest m-4 py-3 px-4 sm:px-8 md:px-12 lg:px-12 xl:px-12 border-2  border-white rounded-3xl slide-in-from-right"
           >
             Shop Art Online
             

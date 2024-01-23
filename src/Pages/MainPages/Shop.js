@@ -51,7 +51,7 @@ const Shop = () => {
       </div>
 
       {/* Banner section with discount information */}
-      <div className="m-10 hidden md:block">
+      <div className="mx-4 my-10 hidden md:block">
         <img src={banner} className="relative h-96 w-full" alt="banner" />
         <div className="absolute top-80 left-20 flex flex-col items-start">
           <h1 className="xl:text-6xl lg:text-4xl md:text-2xl sm:text-xl font-extrabold mt-1 text-[#285380]">
