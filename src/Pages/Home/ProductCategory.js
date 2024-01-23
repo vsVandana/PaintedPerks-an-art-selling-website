@@ -6,7 +6,7 @@ const ProductCategory = ({Items_data, type}) => {
     <div>
         <div className='mx-4 py-10'>
         <div className='flex items-center justify-between '>
-            <h1 className='md:text-3xl sm:text-xl text-md font-extrabold'>Shop By {type}</h1>
+            <h1 className='md:text-3xl sm:text-xl text-lg font-extrabold'>Shop By {type}</h1>
             <Link to='/shop'>
             <button className='border-2 border-[#285380] rounded-3xl bg-[#285380] px-4 sm:px-10 py-2 text-sm md:text-md text-white tracking-wider font-semibold hover:border-[#E7A0AE] hover:bg-[#E7A0AE]'>View More</button>
             </Link>
