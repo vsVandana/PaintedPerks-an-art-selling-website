@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import StataicRating from "../StataicRating";
-import {AiOutlineHeart} from "react-icons/ai"
+// import {AiOutlineHeart} from "react-icons/ai"
 import { Link } from "react-router-dom";
 const PRODUCT_CARDS= ({ items_data, heading }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

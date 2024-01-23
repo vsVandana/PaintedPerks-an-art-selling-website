@@ -3,7 +3,7 @@
 //  import hero3 from '../../utils/images/Home/HeroSec/hero3.jpg'
  import hero4 from '../../utils/images/Home/HeroSec/hero4.jpg'
 //  import hero6 from '../../utils/images/Home/HeroSec/hero6.jpg'
- import hero6 from '../../utils/images/Home/HeroSec/hero6(1).jpg'
+
 export const paintings = [
    {
       image: hero4,
