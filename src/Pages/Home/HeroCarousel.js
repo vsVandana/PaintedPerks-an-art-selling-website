@@ -4,27 +4,35 @@ import { Link } from "react-router-dom";
 
 const HeroCarousel = () => {
   const [currImgIndex, setCurrImgIndex] = useState(0);
+  const [isHovered , setIsHovered] = useState(false)
 
   const nextImg = () => {
+    if(!isHovered)
     setCurrImgIndex((currImgIndex + 1) % paintings.length);
   };
 
   const prevImg = () => {
+    if(!isHovered)
     setCurrImgIndex((currImgIndex - 1 + paintings.length) % paintings.length);
     // Add paintings.length bcz when we are on 0 index and after we are clicking on prevbtn it should show the last index
   };
- 
+  const handleMouseEnter= ()=>{
+    setIsHovered(true);
+  }
+  const handleMouseLeave= ()=>{
+    setIsHovered(false);
+  }
   const currentPainting = paintings[currImgIndex];
 
   useEffect(() => {
     const timer = setInterval(() => {
       nextImg();
-    }, 4000);
+    }, 3000);
     return () => clearInterval(timer);
-  }, );
+  }, [isHovered]);
 
   return(
-    <div className="hero-carousel w-full ">
+    <div className="hero-carousel w-full " onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <button
         onClick={prevImg}
         className="absolute top-[50%] left-[0%] z-10 text-white p-2 text-2xl font-extrabold shadow-md"

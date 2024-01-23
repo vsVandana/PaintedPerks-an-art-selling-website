@@ -2,8 +2,8 @@ import React from 'react'
 // import logo from '../utils/images/logoedit.jpg'
 const Footer = () => {
   return (
-    <div className='px-16 pt-16 pb-4 bg-[#fcdee5]'>
-      <div className='flex justify-evenly gap-3'>
+    <div className='px-10 pt-16 pb-4 bg-[#fcdee5]'>
+      <div className='flex justify-evenly gap-5'>
         <div>
           <h1 className='text-md sm:text-xl md:text-2xl  font-extrabold'>Customer Service</h1>
           <ul className='text-sm sm:text-md md:text-xl text-gray-700 my-6'>
@@ -39,7 +39,7 @@ const Footer = () => {
       <hr/>
       <div className='flex items-center flex-col md:justify-between my-4 gap-3'>
         <div className='text-xl md:text-2xl font-extrabold text-[#285380]'>PaintedPerks</div>
-        <div className='text-xs sm:text-sm md:text-md'>copyright &copy;2023 <span className='text-[#E7A0AE]'>PaintedPerks</span>.All rights reserved.</div>
+        <div className='text-sm sm:text-lg md:text-xl'>copyright &copy;2023 <span className='text-[#E7A0AE]'>PaintedPerks</span>.All rights reserved.</div>
       </div>
     </div>
   )

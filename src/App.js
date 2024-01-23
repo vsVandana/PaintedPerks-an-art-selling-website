@@ -8,6 +8,7 @@ import Artists from './Pages/MainPages/Artists';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ContactUs from './Pages/MainPages/ContactUs';
+import ProductPage from './Pages/MainPages/ProductPage';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
           <Route path='/shop' element={<Shop />}/>
           <Route path='/artists' element={<Artists />}/>
           <Route path='/contact' element={<ContactUs />}/>
+          <Route path='/productpage/:itemId' element = {<ProductPage />} />
         </Routes>
         <Footer />
       </Router>

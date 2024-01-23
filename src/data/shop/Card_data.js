@@ -51,6 +51,7 @@ import img24_1 from '../../utils/images/Shop/24.1.jpg'
 
 export const ProductCardsData = [
     {
+      id:1,
       img1:img1,
       img2:img1_1,
       img_type:'Architecture',
@@ -59,6 +60,7 @@ export const ProductCardsData = [
       price:'$12.00',
   },
     {
+      id:2,
       img1:img2,
       img2:img2_1,
       img_type:'Black & White',
@@ -67,6 +69,7 @@ export const ProductCardsData = [
       price:'$30.00',
   },
     {
+      id:3,
       img1:img3,
       img2:img3_1,
       img_type:'Fashion',
@@ -75,6 +78,7 @@ export const ProductCardsData = [
       price:'$42.00',
   },
     {
+      id:4,
       img1:img4,
       img2:img4_1,
       img_type:'Food',
@@ -83,6 +87,7 @@ export const ProductCardsData = [
       price:'$25.00',
   },
     {
+      id:5,
       img1:img5,
       img2:img5_1,
       img_type:'Illustration',
@@ -91,6 +96,7 @@ export const ProductCardsData = [
       price:'$16.00',
   },
     {
+      id:6,
       img1:img6,
       img2:img6_1,
       img_type:'Kids',
@@ -99,6 +105,7 @@ export const ProductCardsData = [
       price:'$20.00',
   },
     {
+      id:7,
       img1:img7,
       img2:img7_1,
       img_type:'Kitchen',
@@ -107,6 +114,7 @@ export const ProductCardsData = [
       price:'$55.00',
   },
     {
+      id:8,
       img1:img8,
       img2:img8_1,
       img_type:'Nature',
@@ -115,6 +123,7 @@ export const ProductCardsData = [
       price:'$28.00',
   },
     {
+      id:9,
       img1:img9,
       img2:img9_1,
       img_type:'Photography',
@@ -123,6 +132,7 @@ export const ProductCardsData = [
       price:'$35.00',
   },
     {
+      id:10,
       img1:img10,
       img2:img10_1,
       img_type:'Architecture',
@@ -131,6 +141,7 @@ export const ProductCardsData = [
       price:'$38.00',
   },
     {
+      id:11,
       img1:img11,
       img2:img11_1,
       img_type:'Animal',
@@ -139,6 +150,7 @@ export const ProductCardsData = [
       price:'$120.00',
   },
     {
+      id:12,
       img1:img12,
       img2:img12_1,
       img_type:'Black & White',
@@ -147,6 +159,7 @@ export const ProductCardsData = [
       price:'$125.00',
   },
     {
+      id:13,
       img1:img13,
       img2:img13_1,
       img_type:'Fashion',
@@ -155,6 +168,7 @@ export const ProductCardsData = [
       price:'$62.00',
   },
     {
+      id:16,
       img1:img16,
       img2:img16_1,
       img_type:'Food',
@@ -163,6 +177,7 @@ export const ProductCardsData = [
       price:'$75.00',
   },
     {
+      id:14,
       img1:img14,
       img2:img14_1,
       img_type:'Illustration',
@@ -171,6 +186,7 @@ export const ProductCardsData = [
       price:'$180.00',
   },
     {
+      id:15,
       img1:img15,
       img2:img15_1,
       img_type:'Kids',
@@ -179,6 +195,7 @@ export const ProductCardsData = [
       price:'$22.00',
   },
     {
+      id:17,
       img1:img17,
       img2:img17_1,
       img_type:'Kitchen',
@@ -187,6 +204,7 @@ export const ProductCardsData = [
       price:'$65.00',
   },
     {
+      id:18,
       img1:img18,
       img2:img18_1,
       img_type:'Nature',
@@ -195,6 +213,7 @@ export const ProductCardsData = [
       price:'$18.00',
   },
     {
+      id:19,
       img1:img19,
       img2:img19_1,
       img_type:'Photography',
@@ -203,6 +222,7 @@ export const ProductCardsData = [
       price:'$49.00',
   },
     {
+      id:20,
       img1:img20,
       img2:img20_1,
       img_type:'Animal',
@@ -211,6 +231,7 @@ export const ProductCardsData = [
       price:'$90.00',
   },
     {
+      id:21,
       img1:img21,
       img2:img21_1,
       img_type:'Architecture',
@@ -219,6 +240,7 @@ export const ProductCardsData = [
       price:'$110.00',
   },
     {
+      id:22,
       img1:img22,
       img2:img22_1,
       img_type:'Black & White',
@@ -227,6 +249,7 @@ export const ProductCardsData = [
       price:'$56.00',
   },
     {
+      id:23,
       img1:img23,
       img2:img23_1,
       img_type:'Fashion',
@@ -234,7 +257,8 @@ export const ProductCardsData = [
       title:'New York City Poster',
       price:'$64.00',
   },
-    {
+  {
+    id:24,
       img1:img24,
       img2:img24_1,
       img_type:'Illustration',

@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import StataicRating from "../StataicRating";
+import ProductPage from "../MainPages/ProductPage";
+import { Link } from "react-router-dom";
+
 // import { AiOutlineHeart } from "react-icons/ai";
 
 const ProductsContainer = ({ items_data = [], selectedSort }) => {
@@ -46,15 +49,17 @@ const ProductsContainer = ({ items_data = [], selectedSort }) => {
 
   return (
     <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-      {filteredItems.map((items, index) => {
+      {filteredItems.map((items) => {
         return (
+          <Link to={`/productpage/${items.id}`}>
           <div
             className="card w-full"
-            key={index}
-            onMouseEnter={() => handleMouseEnter(index)}
+            key={items.id}
+            onMouseEnter={() => handleMouseEnter(items.id)}
             onMouseLeave={() => handleMouseLeave()}
+
           >
-            {hoveredIndex === index ? (
+            {hoveredIndex === items.id ? (
               // Display alternate image and additional options when hovered
               <div className="relative border-2 p-2">
                 <img className="w-full" src={items.img2} alt="Product_item" />
@@ -85,6 +90,7 @@ const ProductsContainer = ({ items_data = [], selectedSort }) => {
               {items.price}
             </p>
           </div>
+          </Link>
         );
       })}
     </div>

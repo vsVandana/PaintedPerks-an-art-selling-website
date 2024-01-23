@@ -119,6 +119,12 @@ li:active{
   .banner-datail>h1{
    font-size: 1.75rem;
   }
+  .option-image{
+    width:3rem;
+  }
+  .main-image{
+    width:10rem;
+  }
 }
 @media (min-width: 300px) and (max-width: 439px) {
   /* Styles for screens between 240px and 439px */
@@ -127,6 +133,12 @@ li:active{
   }
   .banner-datail>h1{
    font-size: 1.75rem;
+  }
+  .option-image{
+    width:5rem;
+  }
+  .main-image{
+    width:17rem;
   }
 }
 
@@ -138,6 +150,12 @@ li:active{
   .banner-datail>h1{
     font-size: 2.25rem;
    }
+   .option-image{
+    width:5rem;
+  }
+  .main-image{
+    width:21rem;
+  }
 } 
 
 .classify-produds::-webkit-scrollbar {
@@ -166,4 +184,8 @@ li:active{
    background-color: rgb(240, 239, 239);
  
 }
-
+/* 
+PRODUCT PAGE */
+.image-section .active{
+  border: 2px solid black;
+}

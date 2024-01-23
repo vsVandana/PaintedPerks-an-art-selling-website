@@ -20,8 +20,8 @@ const Home = () => {
         <ProductCategory Items_data={Shop_By_Collection} type='Collection'/>
         <BANNER_SEC banner_data={Banner1_data} />
         <ProductCategory Items_data={Shop_By_Cat} type='Category'/>
-        <BANNER_SEC banner_data={Banner2_data} />
         <PRODUCT_CARDS items_data={pwp_sec1_data} heading='Trending Today'/>
+        <BANNER_SEC banner_data={Banner2_data} />
         <PRODUCT_CARDS items_data={pwp_sec2_data} heading='Exclusive Handpics' />
         <ProductCategory Items_data={Shop_By_Artist} type='Artists'/>
         <BANNER_SEC banner_data={Banner3_data} />
