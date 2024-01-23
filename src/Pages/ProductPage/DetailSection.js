@@ -62,7 +62,7 @@ const DetailSection = ({ Product }) => {
             <button>{quantity}</button>
             <button onClick={handleIncreaseQuantity}>+</button>
         </button>
-        <button className=" border-2 border-[#E7A0AE] text-sm py-3 xl:px-32 lg:px-24 md:px-12 sm:px-20 px-12 rounded-3xl bg-[#E7A0AE] hover:border-[#285380] hover:bg-[#285380] text-white">ADD TO CART</button>
+        <button className=" border-2 border-[#E7A0AE] sm:text-sm text-xs py-3 xl:px-32 lg:px-24 md:px-12 sm:px-20 px-10 rounded-3xl bg-[#E7A0AE] hover:border-[#285380] hover:bg-[#285380] text-white">ADD TO CART</button>
       </div>
     </div>
   );
