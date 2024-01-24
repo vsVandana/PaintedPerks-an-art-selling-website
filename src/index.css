@@ -189,3 +189,6 @@ PRODUCT PAGE */
 .image-section .active{
   border: 2px solid black;
 }
+.more-info .active-sec{
+ color: #000;
+}

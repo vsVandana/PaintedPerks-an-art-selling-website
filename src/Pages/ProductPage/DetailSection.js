@@ -64,6 +64,11 @@ const DetailSection = ({ Product }) => {
         </button>
         <button className=" border-2 border-[#E7A0AE] sm:text-sm text-xs py-3 xl:px-32 lg:px-24 md:px-12 sm:px-20 px-10 rounded-3xl bg-[#E7A0AE] hover:border-[#285380] hover:bg-[#285380] text-white">ADD TO CART</button>
       </div>
+      <div className="border-t-2 border-gray-200 my-7"></div>
+<div className="gap-10">
+  <h6 className="text-sm my-2"> <span className="font-semibold">CATEGORIES: </span>  All Art Prints, Posters</h6>
+  <h6 className="text-sm my-2"> <span className="font-semibold">TAGS: </span>  Art, Design, Graphic Art, Illustration, Photography</h6>
+</div>
     </div>
   );
 };
