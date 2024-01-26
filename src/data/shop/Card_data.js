@@ -58,6 +58,7 @@ export const ProductCardsData = [
       rating:5,
       title:'Ornamental Goblet Poster',
       price:'$12.00',
+      category:[ "All Art Prints", "Posters"]
   },
     {
       id:2,
@@ -67,6 +68,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Bona Cuina',
       price:'$30.00',
+      category:[ "All Art Prints", "Wall Art"]
   },
     {
       id:3,
@@ -76,6 +78,7 @@ export const ProductCardsData = [
       rating:2,
       title:'Balance Poster',
       price:'$42.00',
+      category:[ "All Art Prints", "Colouring Posters"]
   },
     {
       id:4,
@@ -85,6 +88,7 @@ export const ProductCardsData = [
       rating:3,
       title:'IL Lemone Poster',
       price:'$25.00',
+      category:[ "All Art Prints", "Colouring Posters"]
   },
     {
       id:5,
@@ -94,6 +98,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Groomy Green Floral',
       price:'$16.00',
+      category:[ "All Art Prints", "Wall Art"]
   },
     {
       id:6,
@@ -103,6 +108,7 @@ export const ProductCardsData = [
       rating:2,
       title:'Japanese Butterfly II Poster',
       price:'$20.00',
+      category:[ "All Art Prints", " Colouring Posters"]
   },
     {
       id:7,
@@ -112,6 +118,7 @@ export const ProductCardsData = [
       rating:5,
       title:'Sorrento Lemone Poster',
       price:'$55.00',
+      category:[ "All Art Prints", " Colouring Posters", "Posters"]
   },
     {
       id:8,
@@ -121,6 +128,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Geometric Shapes poster',
       price:'$28.00',
+      category:[ "All Art Prints", " Colouring Posters", "Gallery Prints"]
   },
     {
       id:9,
@@ -130,6 +138,7 @@ export const ProductCardsData = [
       rating:3,
       title:'Green Play Poster',
       price:'$35.00',
+      category:[ "All Art Prints", "  Gallery Prints", "Wall Art"]
   },
     {
       id:10,
@@ -139,6 +148,7 @@ export const ProductCardsData = [
       rating:1,
       title:'Abstract Poster II',
       price:'$38.00',
+      category:[ "All Art Prints", " Gallery Prints", "Wall Art", "Wood Prints"]
   },
     {
       id:11,
@@ -148,6 +158,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Nina Flagstad Kvorning',
       price:'$120.00',
+      category:[ "All Art Prints", " Colouring Posters"," Wall Art"]
   },
     {
       id:12,
@@ -157,6 +168,7 @@ export const ProductCardsData = [
       rating:5,
       title:'The Penguin Show Poster',
       price:'$125.00',
+      category:[ "All Art Prints", "Canvas Prints"]
   },
     {
       id:13,
@@ -166,6 +178,7 @@ export const ProductCardsData = [
       rating:2,
       title:'Pastel Petals Poster',
       price:'$62.00',
+      category:[ "All Art Prints", " Gallery Prints", "Posters"]
   },
     {
       id:16,
@@ -175,6 +188,7 @@ export const ProductCardsData = [
       rating:3,
       title:'Still Life with FruitBona Cuina',
       price:'$75.00',
+      category:[ "All Art Prints", " Colouring Posters"]
   },
     {
       id:14,
@@ -184,6 +198,7 @@ export const ProductCardsData = [
       rating:3,
       title:'Negroni Cocktail Poster',
       price:'$180.00',
+      category:[ "All Art Prints", " Colouring Posters","Wood Prints"]
   },
     {
       id:15,
@@ -193,6 +208,7 @@ export const ProductCardsData = [
       rating:5,
       title:'Abstract Color Poster',
       price:'$22.00',
+      category:[ "All Art Prints", "Wall Art"]
   },
     {
       id:17,
@@ -202,6 +218,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Green Mountain Range',
       price:'$65.00',
+      category:[ "All Art Prints", " Colouring Posters"," Wood Prints"]
   },
     {
       id:18,
@@ -211,6 +228,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Colorful Wave Poster',
       price:'$18.00',
+      category:[ "All Art Prints", "Canvas Prints", "Posters"]
   },
     {
       id:19,
@@ -220,6 +238,7 @@ export const ProductCardsData = [
       rating:5,
       title:'Green Floral pot Poster',
       price:'$49.00',
+      category:[ "All Art Prints", "Wall Art", "Wood Prints"]
   },
     {
       id:20,
@@ -229,6 +248,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Typography & Quotes Poster',
       price:'$90.00',
+      category:[ "All Art Prints", "Posters", "Wall Art"]
   },
     {
       id:21,
@@ -238,6 +258,7 @@ export const ProductCardsData = [
       rating:2,
       title:'Green Ocean',
       price:'$110.00',
+      category:[ "All Art Prints", " Gallery Prints", "Wall Art"]
   },
     {
       id:22,
@@ -247,6 +268,7 @@ export const ProductCardsData = [
       rating:4,
       title:'Bunny Sleeping Moon Postera',
       price:'$56.00',
+      category:[ "All Art Prints", "Canvas Prints", "Posters", "Wood Prints"]
   },
     {
       id:23,
@@ -256,6 +278,7 @@ export const ProductCardsData = [
       rating:5,
       title:'New York City Poster',
       price:'$64.00',
+      category:[ "All Art Prints", "Posters"]
   },
   {
     id:24,
@@ -265,5 +288,6 @@ export const ProductCardsData = [
       rating:4,
       title:'Aperol Spritz Poster',
       price:'$150.00',
+      category:[ "All Art Prints", "Canvas Prints", "Posters"]
   },
   ]

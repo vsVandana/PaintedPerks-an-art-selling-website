@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DescriptionSection from './DescriptionSection';
 import ReviewSection from './ReviewSection';
 
-const MoreInfo = () => {
+const MoreInfo = ({Product}) => {
   const [currentSec, setCurrentSec] = useState('Description');
 
   return (
@@ -22,7 +22,7 @@ const MoreInfo = () => {
         </h1>
       </div>
       <div className='border-t-2 border-gray-200 mb-7'></div>
-      <div>{currentSec === 'Description' ? <DescriptionSection /> : <ReviewSection />}</div>
+      <div>{currentSec === 'Description' ? <DescriptionSection /> : <ReviewSection Product={Product}/>}</div>
     </div>
   );
 };
