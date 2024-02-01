@@ -3,7 +3,7 @@ import banner from "../../utils/images/Shop/banner.jpg";
 import ProductsContainer from "../Shop/ProductsContainer";
 import { ProductCardsData } from "../../data/shop/Card_data";
 import ProductContainerHeader from "../Shop/ProductContainerHeader";
-import RenderPageNumbers from "../Shop/RenderPageNumbers";
+import RenderPageNumbers from "../RenderPageNumbers";
 
 const Shop = () => {
   // State variables for selected sort option, current page, and selected quantity

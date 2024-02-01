@@ -8,6 +8,7 @@ import img_4_1 from '../../../utils/images/Paintings_By_Price_sec/sec1/img4_1.jp
 import img_4_2 from '../../../utils/images/Paintings_By_Price_sec/sec1/img4_2.jpg';
 export const pwp_sec1_data = [
     {
+        id:2,
         img1:img_1_1,
         img2:img_1_2,
         img_type:'Architecture',
@@ -16,6 +17,7 @@ export const pwp_sec1_data = [
         price:'$12.00',
     },
     {
+        id:1,
         img1:img_2_1,
         img2:img_2_2,
         img_type:'Architecture',
@@ -24,6 +26,7 @@ export const pwp_sec1_data = [
         price:'$15.00',
     },
     {
+        id:3,
         img1:img_3_1,
         img2:img_3_2,
         img_type:'Food',
@@ -32,6 +35,7 @@ export const pwp_sec1_data = [
         price:'$10.00',
     },
     {
+        id:4,
         img1:img_4_1,
         img2:img_4_2,
         img_type:'Architecture',

@@ -7,7 +7,7 @@ export const Shop_By_Cat = [
         id: 1,
         img1 :img1 ,
         Posters : 4 ,
-        collection_type : 'Painting'
+        collection_type : 'Photography'
     },
     {
         id: 2,

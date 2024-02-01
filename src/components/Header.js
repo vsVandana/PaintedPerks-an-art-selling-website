@@ -25,7 +25,7 @@ const Header = () => {
         </div>
        
         
-        <div className={`lg:flex lg:justify-between absolute cursor-pointer top-full left-0 w-full lg:relative lg:w-auto ${showNav ? 'block' : 'hidden'}`}>
+        <div className={`lg:flex lg:justify-between absolute cursor-pointer top-full left-0 w-full lg:relative lg:w-auto ${showNav ? 'block' : 'hidden'} `}>
         <Navbar closeNav={closeNav}/>
         </div>
         <div className='flex text-[#285380]'>

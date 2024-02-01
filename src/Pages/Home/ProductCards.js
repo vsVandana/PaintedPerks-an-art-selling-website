@@ -26,11 +26,13 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
       <div className="my-12 flex justify-between flex-wrap sm:flex-nowrap">
         {items_data.map((items, index) => {
           return (
+          
             <div className="card w-full sm:w-1/4 m-1 p-4 border-2" 
             key={index}
             onMouseEnter={()=>handleMouseEnter(index)}
             onMouseLeave={()=>handleMouseLeave()}
             >
+              <Link to={`/productpage/${items.id}`}>
             {(hoveredIndex === index) ? (
               <div className="relative border-2 p-2">
                 <img className="w-full" src={items.img2} alt="Product_item" />
@@ -54,7 +56,9 @@ const PRODUCT_CARDS= ({ items_data, heading }) => {
                 {items.title}
               </h1>
               <p className="lg:text-xl text-md font-extrabold pb-1">{items.price}</p>
+              </Link>
             </div>
+            
           );
         })}
       </div>

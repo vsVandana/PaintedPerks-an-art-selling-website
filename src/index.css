@@ -5,9 +5,21 @@
 li{
   cursor:pointer;
 }
-li:hover,
-li:active{
+li:hover{
   color: #E7A0AE;
+}
+.active .nav-link{
+  color: #E7A0AE;
+ position: relative;
+}
+.active .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -15px; /* Adjust the distance of the underline from the text */
+  left: -10px;
+  width: 135%;
+  height: 4px; /* Adjust the thickness of the underline */
+  background-color: #E7A0AE; /* Pink color for underline */
 }
 
 /* Navbar */
