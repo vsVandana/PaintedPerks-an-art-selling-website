@@ -36,7 +36,7 @@ const Artists = () => {
       <h1 className="mb-16 text-5xl font-bold">All Artists</h1>
       <ul className="flex gap-6 text-gray-400">
         {sortBy.map((word, index)=>{
-          return(<li key={index} className={`cursor-pointer ${
+          return(<li key={index} className={`cursor-pointer text-sm ${
             selectedAlphabet === word
               ? "text-[#E7A0AE] border-b-2 border-[#E7A0AE]"
               : "border-b-2 border-transparent"
