@@ -1,4 +1,4 @@
-import img1_1 from '../../../utils/images/Home/sec2/se2_1_1.jpg';
+import img1_1 from '../../../utils/images/Home/sec2/sec2_1.jpg';
 import img1_2 from '../../../utils/images/Home/sec2/se2_1_1.jpg';
 import img2_1 from '../../../utils/images/Home/sec2/sec2_2.jpg';
 import img2_2 from '../../../utils/images/Home/sec2/sec2_2_1.jpg';

@@ -80,7 +80,7 @@ const Shop = () => {
           selectedQuantity={selectedQuantity}
           onQuantityChange={handleQuantityChange}
           startIndex={startIndex+1}
-          endIndex={endIndex+1}
+          endIndex={endIndex}
           totalItems={totalItems}
         />
 

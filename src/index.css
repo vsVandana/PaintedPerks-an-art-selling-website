@@ -15,11 +15,11 @@ li:hover{
 .active .nav-link::after {
   content: '';
   position: absolute;
-  bottom: -15px; /* Adjust the distance of the underline from the text */
+  bottom: -15px; 
   left: -10px;
   width: 135%;
-  height: 4px; /* Adjust the thickness of the underline */
-  background-color: #E7A0AE; /* Pink color for underline */
+  height: 4px; 
+  background-color: #E7A0AE; 
 }
 
 /* Navbar */

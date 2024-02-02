@@ -3,7 +3,7 @@ import { description_data } from "../../data/productPage/description_data";
 
 const DescriptionSection = () => {
   return (
-    <div className="flex gap-10 justify-between items-center">
+    <div className="flex flex-col md:flex-row gap-10 justify-between items-center">
       <div className="md:w-3/4 flex flex-col gap-4">
         <h5 className="text-gray-400">PRODUCT INFORMATION</h5>
         <p className="text-3xl">

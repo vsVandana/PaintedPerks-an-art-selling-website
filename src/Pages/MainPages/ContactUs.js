@@ -5,7 +5,7 @@ const ContactUs = () => {
     <div className='m-10'>
       
       <div className='flex flex-col  justify-center'>
-        <h1 className='text-4xl font-bold text-center'>Send a Request</h1>
+        <h1 className='text-4xl font-bold text-center text-[#285380]'>Send a Request</h1>
         <p className='text-gray-500 text-center '>Complete the form below, select a subject, type your question or comment and we will get back to you as soon as possible.</p>
        <form className='flex flex-col gap-3 my-10 cursor-pointer'>
         <label htmlFor='subject'>SUBJECT</label>

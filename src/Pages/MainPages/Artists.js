@@ -33,7 +33,7 @@ const Artists = () => {
   };
   return (
     <div className="px-5 py-10">
-      <h1 className="mb-16 text-5xl font-bold">All Artists</h1>
+      <h1 className="mb-16 text-5xl font-bold text-[#285380]">All Artists</h1>
       <ul className="flex flex-wrap gap-6 text-gray-400">
         {sortBy.map((word, index)=>{
           return(<li key={index} className={`cursor-pointer text-sm ${
