@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import ContactUs from './Pages/MainPages/ContactUs';
 import ProductPage from './Pages/MainPages/ProductPage';
+import ScrollToTop from './Pages/ScrollToTop';
 
 const Breadcrumb = () => {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
     
     <div className="conatainer mx-auto">
       <Router>
+        <ScrollToTop />
         <Header />
         <Body />
         <Breadcrumb />
