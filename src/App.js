@@ -10,6 +10,7 @@ import Header from './components/Header';
 import ContactUs from './Pages/MainPages/ContactUs';
 import ProductPage from './Pages/MainPages/ProductPage';
 import ScrollToTop from './Pages/ScrollToTop';
+import Cart from './Pages/Cart';
 
 const Breadcrumb = () => {
   const location = useLocation();
@@ -52,6 +53,7 @@ function App() {
           <Route path='/artists' element={<Artists />}/>
           <Route path='/contact' element={<ContactUs />}/>
           <Route path='/productpage/:itemId' element = {<ProductPage />} />
+          <Route path='/cart' element = {<Cart />} />
         </Routes>
         <Footer />
       </Router>

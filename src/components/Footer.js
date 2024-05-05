@@ -1,9 +1,9 @@
 import React from 'react'
-// import logo from '../utils/images/logoedit.jpg'
+
 const Footer = () => {
   return (
     <div className='px-10 pt-16 pb-4 bg-[#fcdee5]'>
-      <div className='flex justify-evenly gap-5'>
+      <div className='flex justify-evenly gap-5 md:flex-row flex-col'>
         <div>
           <h1 className='text-md sm:text-xl md:text-2xl  font-extrabold'>Customer Service</h1>
           <ul className='text-sm sm:text-md md:text-xl text-gray-700 my-6'>

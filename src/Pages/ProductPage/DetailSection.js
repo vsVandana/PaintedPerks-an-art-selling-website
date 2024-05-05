@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import StataicRating from "../StataicRating";
+import { useDispatch } from "react-redux";
+import { addItemtoCart } from "../../utils/cartSlice";
 
 const DetailSection = ({ Product }) => {
+  const dispatch = useDispatch()
   const staticSizes = ["30x40", "40x50", "50x50"];
 
   const [selectedSize, setSelectedSize] = useState("");
@@ -19,6 +22,11 @@ const DetailSection = ({ Product }) => {
     const newSize = event.target.value;
     setSelectedSize(newSize);
   };
+
+  const handleAddToCart = (Product)=>{
+    console.log(Product)
+     dispatch(addItemtoCart(Product))
+  }
   return (
     <div className="md:w-1/2">
       <p className="text-gray-400 mb-2">{Product.img_type}</p>
@@ -62,7 +70,7 @@ const DetailSection = ({ Product }) => {
             <button>{quantity}</button>
             <button onClick={handleIncreaseQuantity}>+</button>
         </button>
-        <button className=" border-2 border-[#E7A0AE] sm:text-sm text-xs py-3 xl:px-32 lg:px-24 md:px-12 sm:px-20 px-10 rounded-3xl bg-[#E7A0AE] hover:border-[#285380] hover:bg-[#285380] text-white">ADD TO CART</button>
+        <button className=" border-2 border-[#E7A0AE] sm:text-sm text-xs py-3 xl:px-32 lg:px-24 md:px-12 sm:px-20 px-10 rounded-3xl bg-[#E7A0AE] hover:border-[#285380] hover:bg-[#285380] text-white" onClick={()=>handleAddToCart(Product)}>ADD TO CART</button>
       </div>
       <div className="border-t-2 border-gray-200 my-7"></div>
 <div className="gap-10">

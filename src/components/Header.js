@@ -4,8 +4,10 @@ import { Navbar } from '../Pages/Navbar';
 import {AiOutlineUser,AiOutlineShoppingCart,AiOutlineHeart} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Header = () => {
+  const {items} = useSelector((store)=>store.cart)
   const [showNav , setShowNav] = useState(false); 
   const toggleNav = () => {
     setShowNav(!showNav); 
@@ -29,9 +31,16 @@ const Header = () => {
         <Navbar closeNav={closeNav}/>
         </div>
         <div className='flex text-[#285380]'>
+        {/* <AiOutlineHeart className=' hidden lg:block mx-5 text-2xl cursor-pointer'/> */}
+
+          <Link to='/cart' className='relative flex mx-5'>< AiOutlineShoppingCart className=' text-2xl cursor-pointer hover:text-[#fcdee5]'/>
+          {items.length > 0 && (
+      <span className='absolute top-0 right-0 -mt-3 -mr-3 rounded-full px-2 py-0.5 bg-red-600 text-white text-xs'>
+        {items.length}
+      </span>
+    )}
+          </Link>
           <AiOutlineUser className='hidden lg:block mx-5 text-2xl cursor-pointer'/>
-          < AiOutlineShoppingCart className='mx-5 text-2xl cursor-pointer'/>
-          <AiOutlineHeart className=' hidden lg:block mx-5 text-2xl cursor-pointer'/>
         </div>
     </div>
   )
