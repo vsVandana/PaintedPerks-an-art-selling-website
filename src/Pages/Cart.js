@@ -1,4 +1,4 @@
-import React , {useState} from "react";
+import React  from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { AiFillDelete } from "react-icons/ai";
 import { clearCart, decreaseItemQuantity, increaseItemQuantity, removeItemtoCart } from "../utils/cartSlice";
@@ -54,7 +54,7 @@ const Cart = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900 flex items-center flex-col">
                       <img
                         src={item.img1}
-                        alt="product-image"
+                        alt="product"
                         style={{ width: "70px", height: "70px" }}
                       />
                       <div>

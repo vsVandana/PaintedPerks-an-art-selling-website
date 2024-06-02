@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../utils/images/logoedit.jpg'
 import { Navbar } from '../Pages/Navbar';
-import {AiOutlineUser,AiOutlineShoppingCart,AiOutlineHeart} from 'react-icons/ai';
+import {AiOutlineUser,AiOutlineShoppingCart} from 'react-icons/ai';
 import {GiHamburgerMenu} from 'react-icons/gi'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
