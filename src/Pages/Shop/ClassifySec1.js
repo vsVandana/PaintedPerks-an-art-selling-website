@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
-const ClassifySec1 = ({ heading, items }) => {
+const ClassifySec1 = ({ heading, items, onFilterChange, filterType }) => {
   // State to manage the visibility of items in the collapsible section
   const [showItem, setShowItem] = useState(true);
   // Toggles the visibility of items in the collapsible section.
   const toggleArrow = () => {
     setShowItem(!showItem);
+  };
+  const handleItemClick = (item) => {
+    console.log(item);
+    if (onFilterChange) {
+      onFilterChange(filterType, item);
+    }
+    setShowItem(false);
   };
   return (
     <div className="pt-4 pb-8 pe-2 border-t-2">
@@ -24,7 +31,7 @@ const ClassifySec1 = ({ heading, items }) => {
         {showItem &&
           items?.map((item, index) => {
             return (
-              <li key={index} className="my-1" >
+              <li key={index} className="my-1 cursor-pointer"  onClick={() => handleItemClick(item)}>
                 {item}
               </li>
               

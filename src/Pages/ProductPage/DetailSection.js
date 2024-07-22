@@ -27,6 +27,9 @@ const DetailSection = ({ Product }) => {
     console.log(Product)
      dispatch(addItemtoCart(Product))
   }
+  
+  const tags = ["Art", "Design", "Graphic Art", "Illustration", "Photography"];
+
   return (
     <div className="md:w-1/2">
       <p className="text-gray-400 mb-2">{Product.img_type}</p>
@@ -75,7 +78,7 @@ const DetailSection = ({ Product }) => {
       <div className="border-t-2 border-gray-200 my-7"></div>
 <div className="gap-10">
   <h6 className="text-sm my-2"> <span className="font-semibold">CATEGORIES: </span>{Product.category.join(',  ')}</h6>
-  <h6 className="text-sm my-2"> <span className="font-semibold">TAGS: </span>  Art, Design, Graphic Art, Illustration, Photography</h6>
+  <h6 className="text-sm my-2"> <span className="font-semibold">TAGS: </span>{tags.join(', ')}</h6>
 </div>
     </div>
   );

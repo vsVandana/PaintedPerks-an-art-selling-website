@@ -10,9 +10,58 @@ const Shop = () => {
   const [selectedSort, setSelectedSort] = useState("default");
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedQuantity, setSelectedQuantity] = useState(4);
+  const [selectedFilter, setSelectedFilter] = useState({ category: '', theme: '' });
 
+  const filteredItems = ProductCardsData
+    .filter((item) => {
+      const filterCategoryLower = selectedFilter.category ? selectedFilter.category.toLowerCase() : "";
+    const filterThemeLower = selectedFilter.theme ? selectedFilter.theme.toLowerCase() : "";
+
+    const itemCategoryLower = item.category.map(cat => cat.toLowerCase());
+    const itemImgTypeLower = item.img_type ? item.img_type.toLowerCase() : "";
+    const itemTitleLower = item.title ? item.title.toLowerCase() : "";
+    const itemTagsLower = item.tags ? item.tags.map(tag => tag.toLowerCase()) : [];
+
+    const matchesCategory = filterCategoryLower && (
+      itemCategoryLower.includes(filterCategoryLower) ||
+      itemImgTypeLower.includes(filterCategoryLower) ||
+      itemTitleLower.includes(filterCategoryLower) ||
+      itemTagsLower.includes(filterCategoryLower)
+    );
+
+    const matchesTheme = filterThemeLower && (
+      itemCategoryLower.includes(filterThemeLower) ||
+      itemImgTypeLower.includes(filterThemeLower) ||
+      itemTitleLower.includes(filterThemeLower) ||
+      itemTagsLower.includes(filterThemeLower)
+    );
+
+    return (filterCategoryLower ? matchesCategory : true) &&
+           (filterThemeLower ? matchesTheme : true);
+    })
+    .sort((a, b) => {
+      const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
+      const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
+
+      switch (selectedSort) {
+        case "low-to-high":
+          return priceA - priceB;
+        case "high-to-low":
+          return priceB - priceA;
+        case "popularity":
+          return b.rating - a.rating; 
+        case "rating":
+          return b.rating - a.rating;
+        case "latest":
+          return b.id - a.id;
+        default:
+          return 0;
+      }
+    });
+
+  // console.log(selectedFilter)
   // Calculating total number of items and total number of pages based on selected quantity
-  const totalItems = ProductCardsData.length;
+  const totalItems = filteredItems.length;
   const totalPages = Math.ceil(totalItems / selectedQuantity);
 
   // Calculating the start and end indices for the current page
@@ -20,7 +69,7 @@ const Shop = () => {
   const endIndex = startIndex + selectedQuantity;
 
   // Extracting the items to be displayed on the current page
-  const currentItems = ProductCardsData.slice(startIndex, endIndex);
+  const currentItems = filteredItems.slice(startIndex, endIndex);
 
   // Handling the change in sort option
   const handleSortChange = (option) => {
@@ -37,6 +86,12 @@ const Shop = () => {
     setSelectedQuantity(quantity);
     setCurrentPage(1);
   };
+
+  const handleFilterChange = (filterType, filterValue) => {
+    setSelectedFilter({ ...selectedFilter, [filterType]: filterValue });
+  }; 
+ 
+
   return (
     <div className="my-10 ">
       {/* Section with title and description */}
@@ -69,7 +124,7 @@ const Shop = () => {
         </div>
       </div>
 
-      {/* Divider line */}
+     
       <div className="border-t-2 mx-4 my-4"></div>
 
       {/* Product container with header, products, and pagination */}
@@ -77,6 +132,7 @@ const Shop = () => {
         {/* Header with sorting and quantity selection */}
         <ProductContainerHeader
           onSortChange={handleSortChange}
+          onFilterChange={handleFilterChange}
           selectedQuantity={selectedQuantity}
           onQuantityChange={handleQuantityChange}
           startIndex={startIndex+1}
@@ -88,6 +144,7 @@ const Shop = () => {
         <ProductsContainer
           items_data={currentItems}
           selectedSort={selectedSort}
+          selectedFilter={selectedFilter}
         />
       </div>
 

@@ -4,38 +4,9 @@ import { Link } from "react-router-dom";
 
 // import { AiOutlineHeart } from "react-icons/ai";
 
-const ProductsContainer = ({ items_data = [], selectedSort }) => {
+const ProductsContainer = ({ items_data = [] }) => {
   // State for tracking the index of the hovered product item
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  // Filter and sort the products based on the selected sorting option
-  const filteredItems = items_data
-    .filter((item) => {
-      switch (selectedSort) {
-        case "popularity":
-          return item.rating === 5;
-        case "rating":
-          return item.rating >= 2;
-        case "latest":
-          return item.rating <= 2;
-
-        default:
-          return true;
-      }
-    })
-    .sort((a, b) => {
-      const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
-      const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
-
-      switch (selectedSort) {
-        case "low-to-high":
-          return priceA - priceB;
-        case "high-to-low":
-          return priceB - priceA;
-        default:
-          return 0;
-      }
-    });
 
   // Function to handle mouse enter on a product item, updating the hovered index
   const handleMouseEnter = (index) => {
@@ -48,7 +19,7 @@ const ProductsContainer = ({ items_data = [], selectedSort }) => {
 
   return (
     <div className="my-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-      {filteredItems.map((items) => {
+      {items_data.map((items) => {
         return (
           <Link to={`/productpage/${items.id}`}>
           <div
@@ -97,3 +68,89 @@ const ProductsContainer = ({ items_data = [], selectedSort }) => {
 };
 
 export default ProductsContainer;
+
+
+// Filter and sort the products based on the selected sorting option
+
+  // const filteredItems = items_data
+  //   .filter((item) => {
+  //     if (selectedFilter.category && item.category !== selectedFilter.category) return false;
+  //     if (selectedFilter.theme && item.theme !== selectedFilter.theme) return false;
+  //     const categoryMatch = selectedFilter.category ? item.category === selectedFilter.category : true;
+  //     const themeMatch = selectedFilter.theme ? item.theme === selectedFilter.theme : true;
+
+  //     // Use OR logic to match either category or theme
+  //     return categoryMatch || themeMatch;
+
+  //     switch (selectedSort) {
+  //       case "popularity":
+  //         return item.rating === 5;
+  //       case "rating":
+  //         return item.rating >= 2;
+  //       case "latest":
+  //         return item.rating <= 2;
+
+  //       default:
+  //         return true;
+  //     }
+  //   })
+  //   .sort((a, b) => {
+  //     const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
+  //     const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
+
+  //     switch (selectedSort) {
+  //       case "low-to-high":
+  //         return priceA - priceB;
+  //       case "high-to-low":
+  //         return priceB - priceA;
+  //       default:
+  //         return 0;
+  //     }
+  //   });
+
+  // const filteredItems = items_data
+  //   .filter((item) => {
+  //     const filterCategoryLower = selectedFilter.category ? selectedFilter.category.toLowerCase() : "";
+  //   const filterThemeLower = selectedFilter.theme ? selectedFilter.theme.toLowerCase() : "";
+
+  //   const itemCategoryLower = item.category.map(cat => cat.toLowerCase());
+  //   const itemImgTypeLower = item.img_type ? item.img_type.toLowerCase() : "";
+  //   const itemTitleLower = item.title ? item.title.toLowerCase() : "";
+  //   const itemTagsLower = item.tags ? item.tags.map(tag => tag.toLowerCase()) : [];
+
+  //   const matchesCategory = filterCategoryLower && (
+  //     itemCategoryLower.includes(filterCategoryLower) ||
+  //     itemImgTypeLower.includes(filterCategoryLower) ||
+  //     itemTitleLower.includes(filterCategoryLower) ||
+  //     itemTagsLower.includes(filterCategoryLower)
+  //   );
+
+  //   const matchesTheme = filterThemeLower && (
+  //     itemCategoryLower.includes(filterThemeLower) ||
+  //     itemImgTypeLower.includes(filterThemeLower) ||
+  //     itemTitleLower.includes(filterThemeLower) ||
+  //     itemTagsLower.includes(filterThemeLower)
+  //   );
+
+  //   return (filterCategoryLower ? matchesCategory : true) &&
+  //          (filterThemeLower ? matchesTheme : true);
+  //   })
+  //   .sort((a, b) => {
+  //     const priceA = parseFloat(a.price.replace(/[^0-9.-]+/g, ""));
+  //     const priceB = parseFloat(b.price.replace(/[^0-9.-]+/g, ""));
+
+  //     switch (selectedSort) {
+  //       case "low-to-high":
+  //         return priceA - priceB;
+  //       case "high-to-low":
+  //         return priceB - priceA;
+  //       case "popularity":
+  //         return b.rating - a.rating; 
+  //       case "rating":
+  //         return b.rating - a.rating;
+  //       case "latest":
+  //         return b.id - a.id;
+  //       default:
+  //         return 0;
+  //     }
+  //   });

@@ -3,7 +3,8 @@ import ClassifyProduds from "../Shop/ClassifyProduds";
 import { BsFilterLeft } from "react-icons/bs";
 import SortingDropdown from "./SortingDropdown";
 import QuantityDropdown from "./QuantityDropdown";
-const ProductContainerHeader = ({ onSortChange , selectedQuantity, onQuantityChange ,startIndex , endIndex ,totalItems}) => {
+
+const ProductContainerHeader = ({ onSortChange , onFilterChange, selectedQuantity, onQuantityChange ,startIndex , endIndex ,totalItems}) => {
   // State variables for managing visibility of filter
   const [showFilterContent, setShowFilterContent] = useState(false);
  
@@ -29,6 +30,8 @@ const ProductContainerHeader = ({ onSortChange , selectedQuantity, onQuantityCha
           isOpen={showFilterContent}
           toggleSidebar={toggleFilter}
           closeSidebar={toggleCloseFilter}
+          onFilterChange={onFilterChange}
+
         />
       </div>
 

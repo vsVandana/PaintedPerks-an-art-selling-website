@@ -5,7 +5,6 @@ export const Heading1data = [
   "Colouring Posters",
   "Gallery Prints",
   "Posters",
-  "Uncategorized",
   "Wall Art",
   "Wood Prints",
 ];
